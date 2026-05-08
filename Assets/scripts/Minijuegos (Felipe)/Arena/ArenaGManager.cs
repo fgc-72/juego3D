@@ -1,4 +1,3 @@
-//En la línea 101 está el código para cambiar de escena
 
 using System;
 using UnityEngine;
@@ -11,6 +10,7 @@ public class ArenaGManager : MonoBehaviour
     public OrbSpawner        orbSpawner;
     public TextMeshProUGUI   timerText;
     public TextMeshProUGUI   scoreText;
+    public TextMeshProUGUI   gemasText;
 
     public float gameDuration   = 30f;
     public int   pointsPerShape = 10;
@@ -23,6 +23,25 @@ public class ArenaGManager : MonoBehaviour
     private int   score;
     private bool  running;
 
+    // Estos son los contadores de gemas
+    private int rubiCount = 0;
+    private int esmeraldaCount = 0;
+    private int cuarzoCount = 0;
+    private int lapisLazuliCount = 0;
+    private int amatistaCount = 0;
+    private int zafiroCount = 0;
+    private int diamanteCount = 0;
+
+    // Métodos públicos para acceder a los recursos recolectados desde otras escenas, hay q llamarlos DESPUÉS de que acabe el minijuego
+    public int GetScore() { return score; } // Puntos totales
+    public int GetRubiCount() { return rubiCount; }
+    public int GetEsmeraldaCount() { return esmeraldaCount; }
+    public int GetCuarzoCount() { return cuarzoCount; }
+    public int GetLapisLazuliCount() { return lapisLazuliCount; }
+    public int GetAmatistaCount() { return amatistaCount; }
+    public int GetZafiroCount() { return zafiroCount; }
+    public int GetDiamanteCount() { return diamanteCount; }
+
     void Start() => StartGame();
 
     public void StartGame()
@@ -31,13 +50,24 @@ public class ArenaGManager : MonoBehaviour
         timeLeft = gameDuration;
         running  = true;
 
+        rubiCount = 0;
+        esmeraldaCount = 0;
+        cuarzoCount = 0;
+        lapisLazuliCount = 0;
+        amatistaCount = 0;
+        zafiroCount = 0;
+        diamanteCount = 0;
+
         drawingController.IsEnabled       = true;
         drawingController.OnShapeDrawn   += HandleShapeDrawn;
 
         orbSpawner.OnOrbReachedCenter    += HandleOrbPenalty;
+        orbSpawner.OnOrbCompleted        += HandleOrbCompleted;
+        orbSpawner.OnMineralCompleted    += HandleMineralCompleted;
         orbSpawner.StartSpawning();
 
         RefreshUI();
+        RefreshGemasUI();
     }
 
     void Update()
@@ -52,21 +82,12 @@ public class ArenaGManager : MonoBehaviour
 
     void HandleShapeDrawn(ShapeType drawn)
     {
-        Orb bestMatch  = null;
-        float minDist  = float.MaxValue;
-
         foreach (Orb orb in orbSpawner.ActiveOrbs)
         {
-            if (orb.CurrentShape != drawn) continue;
-
-            float dist = orb.transform.position.magnitude;
-            if (dist < minDist) { minDist = dist; bestMatch = orb; }
-        }
-
-        if (bestMatch != null && bestMatch.TryMatch(drawn))
-        {
-            score += pointsPerShape;
-            RefreshUI();
+            if (orb.CurrentShape == drawn)
+            {
+                orb.TryMatch(drawn);
+            }
         }
     }
 
@@ -74,6 +95,30 @@ public class ArenaGManager : MonoBehaviour
     {
         score = Mathf.Max(0, score - orbPenalty);
         RefreshUI();
+    }
+
+    void HandleOrbCompleted(Orb orb)
+    {
+        if (!orb.IsMineral)
+        {
+            score += pointsPerShape;
+            RefreshUI();
+        }
+    }
+
+    void HandleMineralCompleted(Orb.MineralType type)
+    {
+        switch (type)
+        {
+            case Orb.MineralType.Rubi: rubiCount++; break;
+            case Orb.MineralType.Esmeralda: esmeraldaCount++; break;
+            case Orb.MineralType.Cuarzo: cuarzoCount++; break;
+            case Orb.MineralType.LapisLazuli: lapisLazuliCount++; break;
+            case Orb.MineralType.Amatista: amatistaCount++; break;
+            case Orb.MineralType.Zafiro: zafiroCount++; break;
+            case Orb.MineralType.Diamante: diamanteCount++; break;
+        }
+        RefreshGemasUI();
     }
 
     void EndGame()
@@ -85,6 +130,8 @@ public class ArenaGManager : MonoBehaviour
 
         orbSpawner.StopSpawning();
         orbSpawner.OnOrbReachedCenter -= HandleOrbPenalty;
+        orbSpawner.OnOrbCompleted     -= HandleOrbCompleted;
+        orbSpawner.OnMineralCompleted -= HandleMineralCompleted;
 
         float resourceRatio = Mathf.Clamp01((float)score / scoreForMax);
         Debug.Log($"[MiniGame] Score: {score} | Recurso obtenido: {resourceRatio:P0}");
@@ -96,6 +143,20 @@ public class ArenaGManager : MonoBehaviour
     {
         if (timerText) timerText.text = $"{Mathf.CeilToInt(timeLeft)}s";
         if (scoreText) scoreText.text = $"{score} pts";
+    }
+
+    void RefreshGemasUI()
+    {
+        int totalGemas = rubiCount + esmeraldaCount + cuarzoCount + lapisLazuliCount + amatistaCount + zafiroCount + diamanteCount;
+        if (totalGemas > 0)
+        {
+            gemasText.gameObject.SetActive(true);
+            gemasText.text = $"Rubí: {rubiCount} | Esmeralda: {esmeraldaCount} | Cuarzo: {cuarzoCount} | Lapis: {lapisLazuliCount} | Amatista: {amatistaCount} | Zafiro: {zafiroCount} | Diamante: {diamanteCount}";
+        }
+        else
+        {
+            gemasText.gameObject.SetActive(false);
+        }
     }
 
     // Esto es para el manejo de escenas

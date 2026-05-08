@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "juego3D.slnx"
+    "dotnet.defaultSolution": "JUEGO_3C_MOVIL.slnx"
 }

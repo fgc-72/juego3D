@@ -13,6 +13,8 @@ public class OrbSpawner : MonoBehaviour
     public int   maxShapesPerOrb = 3;
 
     public event Action<Orb> OnOrbReachedCenter;
+    public event Action<Orb.MineralType> OnMineralCompleted;
+    public event Action<Orb> OnOrbCompleted;
 
     public List<Orb> ActiveOrbs { get; private set; } = new List<Orb>();
 
@@ -48,10 +50,31 @@ public class OrbSpawner : MonoBehaviour
 
         if (orb == null) { Debug.LogError("El prefab no tiene componente Orb."); Destroy(go); return; }
 
-        int shapeCount         = UnityEngine.Random.Range(1, maxShapesPerOrb + 1);
-        List<ShapeType> shapes = GenerateShapes(shapeCount);
+        float rand = UnityEngine.Random.value;
+        Orb.MineralType mineralType = Orb.MineralType.None;
+        int shapeCount;
+        float speed = orbSpeed;
+        List<ShapeType> shapes;
 
-        orb.Initialize(shapes, orbSpeed);
+        if (rand < 0.01f)
+        {
+            mineralType = Orb.MineralType.Diamante;
+            shapeCount = maxShapesPerOrb + 10;
+            speed = orbSpeed * 0.35f;
+        }
+        else if (rand < 0.105f)
+        {
+            mineralType = (Orb.MineralType)UnityEngine.Random.Range(1, 7);
+            shapeCount = maxShapesPerOrb + 1;
+        }
+        else
+        {
+            shapeCount = UnityEngine.Random.Range(1, maxShapesPerOrb + 1);
+        }
+
+        shapes = GenerateShapes(shapeCount);
+
+        orb.Initialize(shapes, speed, mineralType);
         orb.OnReachedCenter += HandleReachedCenter;
         orb.OnCompleted     += HandleCompleted;
 
@@ -68,6 +91,11 @@ public class OrbSpawner : MonoBehaviour
     void HandleCompleted(Orb orb)
     {
         ActiveOrbs.Remove(orb);
+        OnOrbCompleted?.Invoke(orb);
+        if (orb.IsMineral)
+        {
+            OnMineralCompleted?.Invoke(orb.mineralType);
+        }
         Destroy(orb.gameObject, 0.05f);
     }
 

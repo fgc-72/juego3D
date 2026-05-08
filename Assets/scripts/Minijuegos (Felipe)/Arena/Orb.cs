@@ -7,6 +7,8 @@ public class Orb : MonoBehaviour
 {
     public TextMeshPro shapeText;
 
+    public enum MineralType { None, Rubi, Esmeralda, Cuarzo, LapisLazuli, Amatista, Zafiro, Diamante }
+
     private static readonly Dictionary<ShapeType, string> Symbols = new()
     {
         { ShapeType.Up,   "↑" },
@@ -15,17 +17,31 @@ public class Orb : MonoBehaviour
         { ShapeType.Right, "→" },
     };
 
+    private static readonly Dictionary<MineralType, string> MineralColors = new()
+    {
+        { MineralType.Rubi,       "#E0115F" },
+        { MineralType.Esmeralda,  "#50C878" },
+        { MineralType.Cuarzo,     "#E6E6FA" },
+        { MineralType.LapisLazuli, "#26619C" },
+        { MineralType.Amatista,   "#9966CC" },
+        { MineralType.Zafiro,     "#0F52BA" },
+        { MineralType.Diamante,   "#B9F2FF" },
+    };
+
     private Queue<ShapeType> queue = new Queue<ShapeType>();
     private float speed;
     private bool active = false;
+    public MineralType mineralType { get; private set; } = MineralType.None;
+    public bool IsMineral => mineralType != MineralType.None;
 
     public event Action<Orb> OnReachedCenter;
     public event Action<Orb> OnCompleted;
 
     public ShapeType CurrentShape => queue.Count > 0 ? queue.Peek() : ShapeType.Down;
 
-    public void Initialize(List<ShapeType> shapes, float moveSpeed)
+    public void Initialize(List<ShapeType> shapes, float moveSpeed, MineralType mineralType = MineralType.None)
     {
+        this.mineralType = mineralType;
         queue.Clear();
         foreach (var s in shapes) queue.Enqueue(s);
         speed  = moveSpeed;
@@ -72,9 +88,12 @@ public class Orb : MonoBehaviour
         ShapeType[] arr = queue.ToArray();
         System.Text.StringBuilder sb = new();
 
+        string baseColor = IsMineral ? MineralColors[mineralType] : "#FFE84D";
+        string dimColor = IsMineral ? MineralColors[mineralType] : "#AAAAAA";
+
         for (int i = 0; i < arr.Length; i++)
         {
-            string color  = i == 0 ? "#FFE84D" : "#AAAAAA";
+            string color  = i == 0 ? baseColor : dimColor;
             float  scale  = i == 0 ? 1.4f : 1.0f;
             sb.Append($"<color={color}><size={scale}em>{Symbols[arr[i]]}</size></color> ");
         }
