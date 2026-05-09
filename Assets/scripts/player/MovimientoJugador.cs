@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class MovimientoJugador : MonoBehaviour
 {
     [SerializeField] float velocidad = 5f;
@@ -18,4 +18,6 @@ public class MovimientoJugador : MonoBehaviour
         Vector3 direccion = transform.right * joystickMovimiento.Horizontal + transform.forward * joystickMovimiento.Vertical;
         rb.linearVelocity = new Vector3(direccion.x * velocidad, rb.linearVelocity.y, direccion.z * velocidad);
     }
+
+    
 }

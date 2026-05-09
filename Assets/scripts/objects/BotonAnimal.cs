@@ -11,7 +11,7 @@ public class BotonAnimal : MonoBehaviour
 
     DatosAnimal datos;
 
-    public void Configurar(DatosAnimal animal)
+    public void Configurar(DatosAnimal animal) // Para configurar el botón con los datos del animal
     {
         datos = animal;
         icono.sprite = animal.icono;
@@ -22,15 +22,16 @@ public class BotonAnimal : MonoBehaviour
         boton.interactable = InventarioJugador.Instancia.TieneRecursos(animal.costoArena, animal.costoMagia);
     }
 
-    public void Craftear()
+    public void Craftear() //  Para craftear el animal al hacer click en el botón
     {
     if (!InventarioJugador.Instancia.TieneRecursos(datos.costoArena, datos.costoMagia)) return;
 
     InventarioJugador.Instancia.GastarRecursos(datos.costoArena, datos.costoMagia);
-    
-    // aparece físicamente en la granja
+
+    // Aparece en la granja visualmente
     Instantiate(datos.prefab3D, datos.zonaSpawn.position, Quaternion.identity);
-    
-    
+
+    // Se guarda en el inventario
+    InventarioJugador.Instancia.AgregarAnimal(datos);
     }
 }

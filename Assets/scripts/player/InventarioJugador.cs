@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class InventarioJugador : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class InventarioJugador : MonoBehaviour
     public int diamantes;
     public int zafiros;
     public int esmeraldas;
+
+    [Header("Animales fabricados")]
+    public Dictionary<DatosAnimal, int> animalesFabricados = new Dictionary<DatosAnimal, int>();
 
     void Awake()
     {
@@ -38,4 +42,33 @@ public class InventarioJugador : MonoBehaviour
         arena -= arenaGastada;
         magia -= magiaGastada;
     }
+
+    public void AgregarAnimal(DatosAnimal datos)
+    {
+        if (animalesFabricados.ContainsKey(datos))
+            animalesFabricados[datos]++;
+        else
+            animalesFabricados[datos] = 1;
+
+        Debug.Log($"Animal agregado: {datos.nombre} — Total: {animalesFabricados[datos]}");
+    }
+
+    public bool TieneAnimal(DatosAnimal datos)
+    {
+        return animalesFabricados.ContainsKey(datos) && animalesFabricados[datos] > 0;
+    }
+
+    public void UsarAnimal(DatosAnimal datos)
+    {
+        if (TieneAnimal(datos))
+            animalesFabricados[datos]--;
+    }
+
+    public void DevolverAnimal(DatosAnimal datos)
+    {
+        AgregarAnimal(datos);
+        Debug.Log($"{datos.nombre} sobrevivió y volvió al inventario.");
+    }
+
+    
 }

@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DatosAnimal
   nombre: 
   icono: {fileID: 0}
-  tipo: 0
+  tipo: 5
   prefab3D: {fileID: 0}
   zonaSpawn: {fileID: 0}
-  vida: 0
-  resistencia: 0
-  "da\xF1o": 0
-  velocidad: 0
-  costoArena: 0
-  costoMagia: 0
+  vida: 10
+  resistencia: 6
+  "da\xF1o": 4
+  velocidad: 2
+  costoArena: 5
+  costoMagia: 5

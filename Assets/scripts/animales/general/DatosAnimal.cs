@@ -9,10 +9,10 @@ public class DatosAnimal : ScriptableObject
     public TipoAnimal tipo;
 
     [Header("Prefab")]
-    public GameObject prefab3D; // el modelo 3D del animal en la granja
+    public GameObject prefab3D; 
     public Transform zonaSpawn; 
 
-    [Header("Stats")]
+    [Header("Stats")] // IMPORTANTE: Aca es lo que tiene que referenciar para las mecanicas de batalla
     public float vida;
     public float resistencia;
     public float daño;

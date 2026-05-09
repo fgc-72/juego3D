@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AnimalNPC : MonoBehaviour
 {
@@ -11,6 +12,13 @@ public class AnimalNPC : MonoBehaviour
 
     void Start()
     {
+        
+        if (SceneManager.GetActiveScene().name == "ciudad1") // Cambia al movimiento correspondiente a cada animal dependiendo de la escena
+        {
+            enabled = false;
+            return;
+        }
+
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         CambiarDireccion();
@@ -30,20 +38,17 @@ public class AnimalNPC : MonoBehaviour
 
     void CambiarDireccion()
     {
-        // dirección aleatoria en el plano horizontal
         float x = Random.Range(-1f, 1f);
         float z = Random.Range(-1f, 1f);
         direccion = new Vector3(x, 0, z).normalized;
         temporizador = tiempoEspera;
-
-        // rota el animal hacia donde va
+        
         if (direccion != Vector3.zero)
             transform.rotation = Quaternion.LookRotation(direccion);
     }
 
     void OnCollisionEnter(Collision col)
     {
-        // si choca con algo cambia de dirección
         CambiarDireccion();
     }
 }
