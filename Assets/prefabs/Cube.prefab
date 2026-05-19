@@ -399,7 +399,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   _speed: 5
   _rb: {fileID: 2128904175671861360}
-  _joystickMovement: {fileID: 0}
   _rotationSpeed: 360
 --- !u!114 &7172388337724603712
 MonoBehaviour:

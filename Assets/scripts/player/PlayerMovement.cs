@@ -9,7 +9,13 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _input;
     private Joystick _joystickMovement;
     [SerializeField] private float _rotationSpeed = 360f;
+    [SerializeField]private Animator _animator;
 
+    void Start()
+    {
+        _input = Vector3.zero;
+        _animator = GetComponent<Animator>();
+    }
     void OnEnable() 
     {
         SceneManager.sceneLoaded += OnScenaCargada;
@@ -47,11 +53,13 @@ public class PlayerMovement : MonoBehaviour
     {
         GatherInput();
         Look();
+        
     }
 
     void FixedUpdate()
     {
         Move();
+        Animation();
     }
 
     void GatherInput() // Obtiene la entrada del joystick para mover al jugador, si no hay joystick no hace nada
@@ -74,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_rb == null) return;
         _rb.MovePosition(transform.position + (transform.forward * _input.magnitude) * _speed * Time.fixedDeltaTime);
+
     }
 
     public void OnTriggerEnter(Collider other) // Cambia de escena al entrar en las puertas, dependiendo de la etiqueta del objeto con el que colisiona (IMPORTANTE: aqui hay que cambiiar el noombre de las escenas si es que se llegan a cambiar en el editor )
@@ -85,5 +94,11 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("sampleScene");
         }
+    }
+
+    void Animation() {
+        if (_animator == null) return;
+        _animator.SetFloat("speed", _input.magnitude);
+        Debug.Log("Input magnitude: " + _input.magnitude);
     }
 }
