@@ -10,6 +10,14 @@ public class Bruja : MonoBehaviour
     public Transform puntoDeInvocacion;
     private UiBatalla ui;
 
+    [Header("Paneles de carga")]
+    [SerializeField] GameObject panelCargaViaje;
+    [SerializeField] GameObject panelCargaVictoria;
+    [SerializeField] GameObject panelCargaDerrota;
+    float tiempoCarga = 2f;
+    [SerializeField]  GameObject uiJuego;
+
+
     public static Bruja Instancia { get; private set; }
 
     void Awake()
@@ -130,5 +138,39 @@ public class Bruja : MonoBehaviour
             Debug.LogWarning("No hay CinemachineCamera en esta escena.");
         }
     }
-    
+
+    public void ViajarACiudad()
+    {
+        StartCoroutine(CargarConPanel(panelCargaViaje, "ciudad1"));
+    }
+
+    public void FinCiudadGanaste()
+    {
+        StartCoroutine(CargarConPanel(panelCargaVictoria, "SampleScene"));
+    }
+
+    public void FinCiudadPerdiste()
+    {
+        StartCoroutine(CargarConPanel(panelCargaDerrota, "SampleScene"));
+    }
+
+    IEnumerator CargarConPanel(GameObject panel, string escenaDestino)
+    {
+        uiJuego.SetActive(false);
+        panel.SetActive(true);
+
+        AsyncOperation carga = SceneManager.LoadSceneAsync(escenaDestino);
+        carga.allowSceneActivation = false;
+
+        float tiempoTranscurrido = 0f;
+        while (tiempoTranscurrido < tiempoCarga || carga.progress < 0.9f)
+        {
+            tiempoTranscurrido += Time.deltaTime;
+            yield return null;
+        }
+
+        carga.allowSceneActivation = true;
+        yield return new WaitForEndOfFrame();
+        panel.SetActive(false);
+    }
 }
