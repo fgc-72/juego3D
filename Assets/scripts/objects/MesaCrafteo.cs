@@ -10,16 +10,28 @@ public class MesaCrafteo : MonoBehaviour
     {
         jugador = GameObject.FindWithTag("Player").transform;
         botonInteraccion.SetActive(false);
+
     }
 
     void Update()
     {
         float distancia = Vector3.Distance(transform.position, jugador.position);
-        botonInteraccion.SetActive(distancia <= distanciaInteraccion);
+        bool objetoActivo = this.gameObject.activeSelf;
+        bool jugadorCerca = distancia <= distanciaInteraccion;
+
+        botonInteraccion.SetActive(objetoActivo && jugadorCerca);
     }
 
+    void OnDisable()
+    {
+        // Esto se ejecuta justo cuando el objeto se desactiva
+        botonInteraccion.SetActive(false);
+    }
     public void AbrirMenu()
     {
         MenuCrafteo.Instancia.Abrir();
     }
+
+  
+
 }

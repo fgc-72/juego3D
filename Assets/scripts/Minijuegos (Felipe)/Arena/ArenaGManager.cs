@@ -11,6 +11,7 @@ public class ArenaGManager : MonoBehaviour
     public TextMeshProUGUI   timerText;
     public TextMeshProUGUI   scoreText;
     public TextMeshProUGUI   gemasText;
+    [SerializeField] private GameObject panelJuego;
 
     public float gameDuration   = 30f;
     public int   pointsPerShape = 10;
@@ -42,10 +43,11 @@ public class ArenaGManager : MonoBehaviour
     public int GetZafiroCount() { return zafiroCount; }
     public int GetDiamanteCount() { return diamanteCount; }
 
-    void Start() => StartGame();
+
 
     public void StartGame()
     {
+        panelJuego.SetActive(true);
         score   = 0;
         timeLeft = gameDuration;
         running  = true;

@@ -130,4 +130,5 @@ public class Bruja : MonoBehaviour
             Debug.LogWarning("No hay CinemachineCamera en esta escena.");
         }
     }
+    
 }

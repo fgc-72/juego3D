@@ -99,6 +99,5 @@ public class PlayerMovement : MonoBehaviour
     void Animation() {
         if (_animator == null) return;
         _animator.SetFloat("speed", _input.magnitude);
-        Debug.Log("Input magnitude: " + _input.magnitude);
     }
 }
