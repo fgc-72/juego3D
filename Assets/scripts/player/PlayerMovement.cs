@@ -89,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("puertaABatalla"))
         {
-            SceneManager.LoadScene("ciudad1");
+            Bruja.Instancia.ViajarACiudad();
         } else if (other.CompareTag("puertaAGranja"))
         {
             SceneManager.LoadScene("sampleScene");
