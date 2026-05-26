@@ -9,6 +9,7 @@ public class Bruja : MonoBehaviour
     public DatosAnimal animalSeleccionado;
     public Transform puntoDeInvocacion;
     private UiBatalla ui;
+    public int nivelCiudad = 1; 
 
     [Header("Paneles de carga")]
     [SerializeField] GameObject panelCargaViaje;
@@ -139,8 +140,9 @@ public class Bruja : MonoBehaviour
         }
     }
 
-    public void ViajarACiudad()
+    public void ViajarACiudad(int nivel)
     {
+        nivelCiudad = nivel;
         StartCoroutine(CargarConPanel(panelCargaViaje, "ciudad1"));
     }
 
@@ -156,7 +158,7 @@ public class Bruja : MonoBehaviour
 
     IEnumerator CargarConPanel(GameObject panel, string escenaDestino)
     {
-        uiJuego.SetActive(false);
+
         panel.SetActive(true);
 
         AsyncOperation carga = SceneManager.LoadSceneAsync(escenaDestino);

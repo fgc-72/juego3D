@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93061c1e20919bc4c90fa538eec47f16, type: 3}
   m_Name: enemigoTest
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  prefab: {fileID: 0}
-  preloadCount: 5
+  prefab: {fileID: 1319483730147908201, guid: 22207a69e9d443f40b4ca6efa35f749b, type: 3}
+  cuantosPregardos: 5

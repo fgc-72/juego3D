@@ -13,6 +13,7 @@ public class poolManager : MonoBehaviour
     {
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
+        
     }
 
     // Llámalo en Start desde WaveManager con los datos que vayas a usar

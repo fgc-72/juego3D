@@ -20,7 +20,14 @@ public class WaveManager : MonoBehaviour
         foreach (var entrada in oleada)
             poolManager.Instance.PreloadPool(entrada.tipoEnemigo);
     }
-
+    public void SetCantidadEnemigos(int total)
+    {
+        // Distribuye el total entre los tipos de enemigos que tengas
+        for (int i = 0; i < oleada.Length; i++)
+        {
+            oleada[i].cantidad = total / oleada.Length;
+        }
+    }
     public void IniciarOleada()
     {
         foreach (var entrada in oleada)

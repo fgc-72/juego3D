@@ -28,6 +28,8 @@ public class EnemyBase : MonoBehaviour
     private void Morir()
     {
         // Aquí animaciones, drops, efectos...
+        GameManagerBatalla.Instance?.SumarPunto();
         poolManager.Instance.ReturnToPool(_data, gameObject);
     }
+
 }
