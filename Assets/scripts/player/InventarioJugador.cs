@@ -41,6 +41,7 @@ public class InventarioJugador : MonoBehaviour
     {
         arena -= arenaGastada;
         magia -= magiaGastada;
+        
     }
 
     public void AgregarAnimal(DatosAnimal datos)

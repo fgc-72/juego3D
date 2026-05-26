@@ -16,7 +16,7 @@ MonoBehaviour:
   icono: {fileID: 0}
   tipo: 5
   prefab3D: {fileID: 0}
-  zonaSpawn: {fileID: 0}
+  zonaSpawn: {fileID: 5020038619915595276, guid: b80baa8f7f322f6409e796f4321a531b, type: 3}
   vida: 10
   resistencia: 6
   "da\xF1o": 4

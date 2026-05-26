@@ -137,7 +137,7 @@ public class ArenaGManager : MonoBehaviour
 
         float resourceRatio = Mathf.Clamp01((float)score / scoreForMax);
         Debug.Log($"[MiniGame] Score: {score} | Recurso obtenido: {resourceRatio:P0}");
-
+        panelJuego.SetActive(false);
         OnGameEnded?.Invoke(resourceRatio);
     }
 

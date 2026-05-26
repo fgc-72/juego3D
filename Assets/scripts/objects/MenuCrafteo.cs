@@ -10,6 +10,7 @@ public class MenuCrafteo : MonoBehaviour
     [SerializeField] Transform contenedorAnimales; // donde se generan los botones
     [SerializeField] GameObject prefabBotonAnimal; // botón con icono y costo
     [SerializeField] DatosAnimal[] animalesDisponibles; // arrastra los ScriptableObjects aquí
+    [SerializeField] GameObject uiJuego; // para ocultar la UI del juego al abrir el menú
 
     void Awake()
     {
@@ -25,12 +26,14 @@ public class MenuCrafteo : MonoBehaviour
     public void Abrir()
     {
         panelMenu.SetActive(true);
+        uiJuego.SetActive(false);
         GenerarBotones();
     }
 
     public void Cerrar()
     {
         panelMenu.SetActive(false);
+        uiJuego.SetActive(true);
     }
 
     void GenerarBotones()

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class BotonAnimal : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class BotonAnimal : MonoBehaviour
     [SerializeField] TextMeshProUGUI nombreTexto;
     [SerializeField] TextMeshProUGUI costoTexto;
     [SerializeField] Button boton;
+    [SerializeField] TextMeshProUGUI alertaTexto; 
+    [SerializeField] TextMeshProUGUI exitoTexto; 
 
     DatosAnimal datos;
 
@@ -24,14 +27,36 @@ public class BotonAnimal : MonoBehaviour
 
     public void Craftear() //  Para craftear el animal al hacer click en el botón
     {
-    if (!InventarioJugador.Instancia.TieneRecursos(datos.costoArena, datos.costoMagia)) return;
+        if (!InventarioJugador.Instancia.TieneRecursos(datos.costoArena, datos.costoMagia)) 
+        {
+            StartCoroutine(MostrarAlerta("Recursos insuficientes"));
+            return;
+        } else {
+            StartCoroutine(MostrarAlertaExito("Animal crafteado con éxito"));
+        }
 
-    InventarioJugador.Instancia.GastarRecursos(datos.costoArena, datos.costoMagia);
+        InventarioJugador.Instancia.GastarRecursos(datos.costoArena, datos.costoMagia);
 
-    // Aparece en la granja visualmente
-    Instantiate(datos.prefab3D, datos.zonaSpawn.position, Quaternion.identity);
+        // Aparece en la granja visualmente
+        Instantiate(datos.prefab3D, datos.zonaSpawn.position, Quaternion.identity);
 
-    // Se guarda en el inventario
-    InventarioJugador.Instancia.AgregarAnimal(datos);
+        // Se guarda en el inventario
+        InventarioJugador.Instancia.AgregarAnimal(datos);
+    }
+
+    IEnumerator MostrarAlerta(string mensaje)
+    {
+        alertaTexto.text = mensaje;
+        alertaTexto.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        alertaTexto.gameObject.SetActive(false);
+    }
+
+    IEnumerator MostrarAlertaExito(string mensaje)
+    {
+        exitoTexto.text = mensaje;
+        exitoTexto.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        exitoTexto.gameObject.SetActive(false);
     }
 }

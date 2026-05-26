@@ -40,4 +40,9 @@ public class arena_boton : MonoBehaviour
         }
            
     }
+
+    public void ViajarBatalla()
+    {
+        Bruja.Instancia.ViajarACiudad(1);
+    }
 }

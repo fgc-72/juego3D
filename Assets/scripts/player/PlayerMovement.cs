@@ -87,13 +87,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnTriggerEnter(Collider other) // Cambia de escena al entrar en las puertas, dependiendo de la etiqueta del objeto con el que colisiona (IMPORTANTE: aqui hay que cambiiar el noombre de las escenas si es que se llegan a cambiar en el editor )
     {
-        if (other.CompareTag("puertaABatalla"))
+        /*if (other.CompareTag("puertaABatalla"))
         {
             Bruja.Instancia.ViajarACiudad(1);
         } else if (other.CompareTag("puertaAGranja"))
         {
             SceneManager.LoadScene("sampleScene");
-        }
+        }*/
     }
 
     void Animation() {
