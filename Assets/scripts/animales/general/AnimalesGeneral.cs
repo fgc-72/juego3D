@@ -4,7 +4,7 @@ public abstract class AnimalesGeneral : MonoBehaviour
 {
     public DatosAnimal datos;
 
-    public abstract void Atacar();// sirve para que cada animal tenga un ataque diferente
+    public abstract void Atacar(int datos.daño);// sirve para que cada animal tenga un ataque diferente
     public abstract void Morir(); // sirve para que cada animal tenga una animacion de muerte diferente
     public abstract void Spawn(); //sirve para que cada animal trenga una animacion de spawn diferente
     public abstract void Movimiento();// sirve para que cada animal tenga un movimiento diferente
@@ -18,6 +18,13 @@ public abstract class AnimalesGeneral : MonoBehaviour
     {
         InventarioJugador.Instancia.DevolverAnimal(datos);
         Destroy(gameObject);
+    }
+
+    public void RecibirDaño(int daño)
+    {
+        datos.vida -= daño;
+        if (datos.vida <= 0)
+            Morir();
     }
 
     public virtual void Invocar(Vector3 posicion, Quaternion rotacion) // Para invocar animales desde el inventario

@@ -29,7 +29,7 @@ public class cerdo : AnimalesGeneral
         }
     }
 
-    public override void Atacar()
+    public override void Atacar( int daño)
     {
     }
 
