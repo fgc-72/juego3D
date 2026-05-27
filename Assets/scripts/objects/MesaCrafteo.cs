@@ -10,6 +10,7 @@ public class MesaCrafteo : MonoBehaviour
     {
         jugador = GameObject.FindWithTag("Player").transform;
         botonInteraccion.SetActive(false);
+        FindObjectOfType<uiJuego>()?.ActualizarRecursos();
 
     }
 

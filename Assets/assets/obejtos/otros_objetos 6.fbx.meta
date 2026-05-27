@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 01e31db09122e2a4bbe3cc7a99b671dd
+guid: 551d4ed5d20081444afaeae46d2f48ac
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PAREDES
-    second: {fileID: 2100000, guid: da6f67e92be58d94d9c47bb04f3e5191, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Upper_Thin_Vert_Beam.001
-    second: {fileID: 2100000, guid: a1457af8d5bebd241bbfe8077374159b, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -43,7 +33,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 3
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -101,7 +91,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 3
+    globalScale: 0.0001
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

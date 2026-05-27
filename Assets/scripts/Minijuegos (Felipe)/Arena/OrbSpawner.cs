@@ -38,6 +38,15 @@ public class OrbSpawner : MonoBehaviour
         }
     }
 
+    public void DestruirTodosLosOrbes()
+    {
+        foreach (Orb orb in ActiveOrbs.ToArray())
+        {
+            if (orb != null)
+                Destroy(orb.gameObject);
+        }
+        ActiveOrbs.Clear();
+    }
     void SpawnOrb()
     {
         if (orbPrefab == null) { Debug.LogWarning("OrbSpawner: falta asignar orbPrefab"); return; }

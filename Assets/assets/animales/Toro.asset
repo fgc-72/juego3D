@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Toro
   m_EditorClassIdentifier: Assembly-CSharp::DatosAnimal
   nombre: 
-  icono: {fileID: 0}
+  icono: {fileID: 21300000, guid: 6930950f841e20847ae472e34bff807b, type: 3}
   tipo: 5
   prefab3D: {fileID: 0}
   zonaSpawn: {fileID: 5020038619915595276, guid: b80baa8f7f322f6409e796f4321a531b, type: 3}

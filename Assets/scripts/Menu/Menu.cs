@@ -2,18 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuButtons : MonoBehaviour
 {
-  public void Play()
+    public float sliderValue;
+    public Slider sliderVolumen;
+
+    void Start()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        sliderVolumen.value = PlayerPrefs.GetFloat("volumenAudio", 0.5f);
+        AudioListener.volume = sliderVolumen.value;
     }
 
-    
+    public void ChangeSliderVolume(float valorVolumen)
+    {
+        PlayerPrefs.SetFloat("volumenAudio", valorVolumen);
+        PlayerPrefs.Save();
+
+        AudioListener.volume = valorVolumen;
+    }
+
+    public void Play()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        GameManagerGeneral.Instancia.InicioJuegoCinematica();
+    }
+
     public void Quit()
     {
         Application.Quit();
         Debug.Log("Player Said I quit");
     }
+
 }

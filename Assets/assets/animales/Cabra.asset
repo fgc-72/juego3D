@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cabra
   m_EditorClassIdentifier: Assembly-CSharp::DatosAnimal
   nombre: 
-  icono: {fileID: 0}
+  icono: {fileID: 21300000, guid: 4f101259ab1ca944ca44f12d64cb661c, type: 3}
   tipo: 2
   prefab3D: {fileID: 0}
   zonaSpawn: {fileID: 8396601569876951356, guid: 0b5bd40ced06e1e4a90f66d04ef55583, type: 3}

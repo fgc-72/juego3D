@@ -7,16 +7,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _speed = 5f;
     [SerializeField] private Rigidbody _rb;
     private Vector3 _input;
-    private Joystick _joystickMovement;
+    [SerializeField] private Joystick _joystickMovement;
     [SerializeField] private float _rotationSpeed = 360f;
-    [SerializeField]private Animator _animator;
+    [SerializeField] private Animator _animator;
 
     void Start()
     {
         _input = Vector3.zero;
         _animator = GetComponent<Animator>();
+        
     }
-    void OnEnable() 
+
+    /*void OnEnable()
     {
         SceneManager.sceneLoaded += OnScenaCargada;
     }
@@ -26,16 +28,22 @@ public class PlayerMovement : MonoBehaviour
         SceneManager.sceneLoaded -= OnScenaCargada;
     }
 
-    void OnScenaCargada(Scene escena, LoadSceneMode mode) // Busca el joystick cada vez que se carga una escena, para evitar errores al cambiar de escena
+    void OnScenaCargada(Scene escena, LoadSceneMode mode)
     {
         _input = Vector3.zero;
-        StartCoroutine(BuscarJoystick());
+        _joystickMovement = null;
+
+        // Solo busca joystick en las escenas que lo tienen
+        if (escena.name == "ciudad1" || escena.name == "SampleScene")
+        {
+            StartCoroutine(BuscarJoystick());
+        }
     }
 
     IEnumerator BuscarJoystick()
     {
         yield return new WaitForEndOfFrame();
-        yield return new WaitForEndOfFrame(); // doble frame por seguridad
+        yield return new WaitForEndOfFrame();
 
         Joystick[] joysticks = FindObjectsByType<Joystick>(FindObjectsSortMode.None);
         if (joysticks.Length > 0)
@@ -47,13 +55,12 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.LogWarning("No se encontró joystick en la escena.");
         }
-    }
+    }*/
 
     void Update()
     {
         GatherInput();
         Look();
-        
     }
 
     void FixedUpdate()
@@ -62,13 +69,13 @@ public class PlayerMovement : MonoBehaviour
         Animation();
     }
 
-    void GatherInput() // Obtiene la entrada del joystick para mover al jugador, si no hay joystick no hace nada
+    void GatherInput()
     {
         if (_joystickMovement == null) return;
         _input = new Vector3(_joystickMovement.Horizontal, 0, _joystickMovement.Vertical);
     }
 
-    void Look() // Hace que el jugador mire en la dirección del movimiento, si no hay input no hace nada
+    void Look()
     {
         if (_input != Vector3.zero)
         {
@@ -78,25 +85,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Move() // Mueve al jugador en la dirección del input, si no hay input no hace nada
+    void Move()
     {
         if (_rb == null) return;
         _rb.MovePosition(transform.position + (transform.forward * _input.magnitude) * _speed * Time.fixedDeltaTime);
-
     }
 
-    public void OnTriggerEnter(Collider other) // Cambia de escena al entrar en las puertas, dependiendo de la etiqueta del objeto con el que colisiona (IMPORTANTE: aqui hay que cambiiar el noombre de las escenas si es que se llegan a cambiar en el editor )
+    void Animation()
     {
-        /*if (other.CompareTag("puertaABatalla"))
-        {
-            Bruja.Instancia.ViajarACiudad(1);
-        } else if (other.CompareTag("puertaAGranja"))
-        {
-            SceneManager.LoadScene("sampleScene");
-        }*/
-    }
-
-    void Animation() {
         if (_animator == null) return;
         _animator.SetFloat("speed", _input.magnitude);
     }

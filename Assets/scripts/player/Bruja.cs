@@ -16,7 +16,6 @@ public class Bruja : MonoBehaviour
     [SerializeField] GameObject panelCargaVictoria;
     [SerializeField] GameObject panelCargaDerrota;
     float tiempoCarga = 2f;
-    [SerializeField]  GameObject uiJuego;
 
 
     public static Bruja Instancia { get; private set; }
@@ -140,6 +139,7 @@ public class Bruja : MonoBehaviour
         }
     }
 
+
     public void ViajarACiudad(int nivel)
     {
         nivelCiudad = nivel;
@@ -148,6 +148,9 @@ public class Bruja : MonoBehaviour
 
     public void FinCiudadGanaste()
     {
+
+        ArenaGManager.ResetearProgreso();
+        nivelCiudad = Mathf.Min(nivelCiudad + 1, 3);
         StartCoroutine(CargarConPanel(panelCargaVictoria, "SampleScene"));
     }
 

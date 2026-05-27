@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cerdo
   m_EditorClassIdentifier: Assembly-CSharp::DatosAnimal
   nombre: cerdo
-  icono: {fileID: 21300000, guid: 5b56d9fa0e8bd6e409ed188db38a692c, type: 3}
+  icono: {fileID: 21300000, guid: 6d1577c703a6c024c836975b96e17255, type: 3}
   tipo: 0
   prefab3D: {fileID: 2859696691374206359, guid: ec17a2fcaa5777e4295c29ac285da8a2, type: 3}
   zonaSpawn: {fileID: 726279594064711754, guid: e20d8f43b63e80d4096be569b5d70e40, type: 3}
