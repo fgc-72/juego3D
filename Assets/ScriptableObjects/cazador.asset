@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93061c1e20919bc4c90fa538eec47f16, type: 3}
-  m_Name: enemigoTest
+  m_Name: cazador
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  prefab: {fileID: 1319483730147908201, guid: 22207a69e9d443f40b4ca6efa35f749b, type: 3}
+  prefab: {fileID: 919132149155446097, guid: f77379105983a2a4e9befe7aa2f6b49e, type: 3}
   cuantosPregardos: 5

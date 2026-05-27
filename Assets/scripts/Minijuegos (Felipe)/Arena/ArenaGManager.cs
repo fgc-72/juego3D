@@ -1,87 +1,103 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using TMPro;
-using System.Collections;
 
 public class ArenaGManager : MonoBehaviour
 {
     [Header("Referencias")]
     public DrawController drawingController;
-    public OrbSpawner        orbSpawner;
-    public TextMeshProUGUI   timerText;
-    public TextMeshProUGUI   scoreText;
-    public TextMeshProUGUI   gemasText;
-    public TextMeshProUGUI   resultadoText; // texto de resultado al terminar
+    public OrbSpawner orbSpawner;
+
+    [Header("UI")]
+    public TextMeshProUGUI timerText;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI gemasText;
+    public TextMeshProUGUI resultadoText;
+
     [SerializeField] private GameObject panelJuego;
 
-    public float gameDuration   = 30f;
-    public int   pointsPerShape = 2;
-    public int   orbPenalty     = 20;
+    [Header("Configuración General")]
+    public float gameDuration = 30f;
+    public int pointsPerShape = 2;
+    public int orbPenalty = 20;
 
-    // Puntos maximos por nivel
+    [Header("Objetivos por nivel")]
     private int[] maximoArena = { 20, 40, 60 };
+
+    [Header("Dificultad por nivel")]
+    [SerializeField] private float[] spawnPorNivel = { 2f, 1.2f, 0.7f };
+    [SerializeField] private float[] velocidadPorNivel = { 1f, 1.7f, 2.5f };
 
     public event Action<float> OnGameEnded;
 
     private float timeLeft;
-    private bool  running;
+    private bool running;
 
-    // Puntos acumulativos entre intentos, no se resetean hasta subir de nivel
-    private static int puntosAcumulados = 0;
     private int puntosEsteIntento = 0;
 
-    // Gemas acumuladas igual
-    private static int rubiCount = 0;
-    private static int esmeraldaCount = 0;
-    private static int cuarzoCount = 0;
-    private static int lapisLazuliCount = 0;
-    private static int amatistaCount = 0;
-    private static int zafiroCount = 0;
-    private static int diamanteCount = 0;
+    // Recursos temporales SOLO del intento actual
+    private int rubiCount = 0;
+    private int esmeraldaCount = 0;
+    private int cuarzoCount = 0;
+    private int lapisLazuliCount = 0;
+    private int amatistaCount = 0;
+    private int zafiroCount = 0;
+    private int diamanteCount = 0;
 
-    public int GetScore() => puntosAcumulados;
-    public int GetRubiCount() => rubiCount;
-    public int GetEsmeraldaCount() => esmeraldaCount;
-    public int GetCuarzoCount() => cuarzoCount;
-    public int GetLapisLazuliCount() => lapisLazuliCount;
-    public int GetAmatistaCount() => amatistaCount;
-    public int GetZafiroCount() => zafiroCount;
-    public int GetDiamanteCount() => diamanteCount;
+    // Cache UI
+    private uiJuego uiJuegoRef;
+    private arena_boton botonRef;
 
-    // Resetea todo al subir de nivel
-    public static void ResetearProgreso()
+    private void Awake()
     {
-        puntosAcumulados = 0;
-        rubiCount = 0;
-        esmeraldaCount = 0;
-        cuarzoCount = 0;
-        lapisLazuliCount = 0;
-        amatistaCount = 0;
-        zafiroCount = 0;
-        diamanteCount = 0;
+        uiJuegoRef = FindObjectOfType<uiJuego>();
+        botonRef = FindObjectOfType<arena_boton>();
     }
 
     int ObtenerPuntosMaximos()
     {
-        int nivel = Bruja.Instancia != null ? Bruja.Instancia.nivelCiudad : 1;
-        nivel = Mathf.Clamp(nivel, 1, maximoArena.Length);
-        return maximoArena[nivel - 1];
+        int nivel = GameManagerGeneral.Instancia != null
+            ? GameManagerGeneral.Instancia.nivelCiudad
+            : 0;
+
+        nivel = Mathf.Clamp(nivel, 0, maximoArena.Length - 1);
+
+        return maximoArena[nivel];
+    }
+
+    void ConfigurarDificultad()
+    {
+        int nivel = GameManagerGeneral.Instancia != null
+            ? GameManagerGeneral.Instancia.nivelCiudad
+            : 0;
+
+        nivel = Mathf.Clamp(nivel, 0, spawnPorNivel.Length - 1);
+
+        orbSpawner.spawnInterval = spawnPorNivel[nivel];
+        orbSpawner.orbSpeed = velocidadPorNivel[nivel];
+
+        Debug.Log($"Nivel {nivel} | Spawn: {orbSpawner.spawnInterval} | Speed: {orbSpawner.orbSpeed}");
     }
 
     public void StartGame()
     {
-        
         panelJuego.SetActive(true);
-        puntosEsteIntento = 0;
-        timeLeft = gameDuration;
-        running  = true;
 
-        drawingController.IsEnabled     = true;
+        ResetearIntento();
+
+        timeLeft = gameDuration;
+        running = true;
+
+        ConfigurarDificultad();
+
+        drawingController.IsEnabled = true;
         drawingController.OnShapeDrawn += HandleShapeDrawn;
 
-        orbSpawner.OnOrbReachedCenter  += HandleOrbPenalty;
-        orbSpawner.OnOrbCompleted      += HandleOrbCompleted;
-        orbSpawner.OnMineralCompleted  += HandleMineralCompleted;
+        orbSpawner.OnOrbReachedCenter += HandleOrbPenalty;
+        orbSpawner.OnOrbCompleted += HandleOrbCompleted;
+        orbSpawner.OnMineralCompleted += HandleMineralCompleted;
+
         orbSpawner.StartSpawning();
 
         RefreshUI();
@@ -96,9 +112,24 @@ public class ArenaGManager : MonoBehaviour
         if (!running) return;
 
         timeLeft -= Time.deltaTime;
+
         RefreshUI();
 
-        if (timeLeft <= 0f) EndGame();
+        if (timeLeft <= 0f)
+            EndGame();
+    }
+
+    void ResetearIntento()
+    {
+        puntosEsteIntento = 0;
+
+        rubiCount = 0;
+        esmeraldaCount = 0;
+        cuarzoCount = 0;
+        lapisLazuliCount = 0;
+        amatistaCount = 0;
+        zafiroCount = 0;
+        diamanteCount = 0;
     }
 
     void HandleShapeDrawn(ShapeType drawn)
@@ -110,10 +141,10 @@ public class ArenaGManager : MonoBehaviour
         }
     }
 
-    void HandleOrbPenalty(Orb _)
+    void HandleOrbPenalty(Orb orb)
     {
-        // Penalización solo en el intento actual, no baja los acumulados
         puntosEsteIntento = Mathf.Max(0, puntosEsteIntento - orbPenalty);
+
         RefreshUI();
     }
 
@@ -122,6 +153,7 @@ public class ArenaGManager : MonoBehaviour
         if (!orb.IsMineral)
         {
             puntosEsteIntento += pointsPerShape;
+
             RefreshUI();
         }
     }
@@ -130,14 +162,35 @@ public class ArenaGManager : MonoBehaviour
     {
         switch (type)
         {
-            case Orb.MineralType.Rubi:        rubiCount++;        break;
-            case Orb.MineralType.Esmeralda:   esmeraldaCount++;   break;
-            case Orb.MineralType.Cuarzo:      cuarzoCount++;      break;
-            case Orb.MineralType.LapisLazuli: lapisLazuliCount++; break;
-            case Orb.MineralType.Amatista:    amatistaCount++;    break;
-            case Orb.MineralType.Zafiro:      zafiroCount++;      break;
-            case Orb.MineralType.Diamante:    diamanteCount++;    break;
+            case Orb.MineralType.Rubi:
+                rubiCount++;
+                break;
+
+            case Orb.MineralType.Esmeralda:
+                esmeraldaCount++;
+                break;
+
+            case Orb.MineralType.Cuarzo:
+                cuarzoCount++;
+                break;
+
+            case Orb.MineralType.LapisLazuli:
+                lapisLazuliCount++;
+                break;
+
+            case Orb.MineralType.Amatista:
+                amatistaCount++;
+                break;
+
+            case Orb.MineralType.Zafiro:
+                zafiroCount++;
+                break;
+
+            case Orb.MineralType.Diamante:
+                diamanteCount++;
+                break;
         }
+
         RefreshGemasUI();
     }
 
@@ -145,21 +198,23 @@ public class ArenaGManager : MonoBehaviour
     {
         running = false;
 
-        drawingController.IsEnabled     = false;
+        drawingController.IsEnabled = false;
         drawingController.OnShapeDrawn -= HandleShapeDrawn;
 
         orbSpawner.StopSpawning();
-        orbSpawner.OnOrbReachedCenter  -= HandleOrbPenalty;
-        orbSpawner.OnOrbCompleted      -= HandleOrbCompleted;
-        orbSpawner.OnMineralCompleted  -= HandleMineralCompleted;
 
-        // Destruye todos los orbes inmediatamente
+        orbSpawner.OnOrbReachedCenter -= HandleOrbPenalty;
+        orbSpawner.OnOrbCompleted -= HandleOrbCompleted;
+        orbSpawner.OnMineralCompleted -= HandleMineralCompleted;
+
         orbSpawner.DestruirTodosLosOrbes();
 
         int puntosMaximos = ObtenerPuntosMaximos();
+
         bool cumplio = puntosEsteIntento >= puntosMaximos;
 
         float resourceRatio = Mathf.Clamp01((float)puntosEsteIntento / puntosMaximos);
+
         OnGameEnded?.Invoke(resourceRatio);
 
         StartCoroutine(MostrarResultadoYCerrar(cumplio, puntosMaximos));
@@ -167,71 +222,114 @@ public class ArenaGManager : MonoBehaviour
 
     IEnumerator MostrarResultadoYCerrar(bool cumplio, int puntosMaximos)
     {
-        arena_boton boton = FindObjectOfType<arena_boton>();
         if (resultadoText != null)
         {
             resultadoText.gameObject.SetActive(true);
 
-            if (cumplio){
-                resultadoText.text = $"¡Lograste {puntosEsteIntento}/{puntosMaximos} puntos!\n¡Avanzas al siguiente nivel!";
+            if (cumplio)
+            {
                 GuardarRecursosEnInventario();
-                FindObjectOfType<uiJuego>()?.ActualizarRecursos();
-                boton.DesactivarBoton();
-            }else{
-                resultadoText.text = $"Obtuviste {puntosEsteIntento}/{puntosMaximos} puntos.\n¡Inténtalo de nuevo!";
-                ResetearProgreso();
+
+                uiJuegoRef?.ActualizarRecursos();
+
+                if (GameManagerGeneral.Instancia.nivelCiudad >= 2)
+                {
+                    resultadoText.text = "¡Completaste todos los niveles!";
+
+                    yield return new WaitForSeconds(2f);
+
+                    panelJuego.SetActive(false);
+
+                    GameManagerGeneral.Instancia.FinCiudadGanaste();
+
+                    yield break;
+                }
+
+                resultadoText.text =
+                    $"¡Lograste {puntosEsteIntento}/{puntosMaximos}!\n¡Subiste de nivel!";
+
+                GameManagerGeneral.Instancia.SubirNivel();
+
+                botonRef?.DesactivarBoton();
             }
-                
+            else
+            {
+                resultadoText.text =
+                    $"Obtuviste {puntosEsteIntento}/{puntosMaximos}.\n¡Inténtalo de nuevo!";
+            }
         }
 
         yield return new WaitForSeconds(2f);
-        panelJuego.SetActive(false);
-        
-        boton.ActivarPanel();
 
-        
-        // Si no cumplió simplemente cierra el panel, puede volver a jugar
-        // sin perder los puntos acumulados
+        panelJuego.SetActive(false);
+
+        botonRef?.ActivarPanel();
     }
 
     void GuardarRecursosEnInventario()
     {
         var inv = InventarioJugador.Instancia;
+
         if (inv == null) return;
 
-        // Arena según los puntos obtenidos
+        // Arena
         inv.arena += puntosEsteIntento;
 
-        // Minerales recolectados
-        inv.rubies       += rubiCount;
-        inv.esmeraldas   += esmeraldaCount;
-        inv.cuarzos      += cuarzoCount;
+        // Minerales
+        inv.rubies += rubiCount;
+        inv.esmeraldas += esmeraldaCount;
+        inv.cuarzos += cuarzoCount;
         inv.lapislazulis += lapisLazuliCount;
-        inv.amatistas    += amatistaCount;
-        inv.zafiros      += zafiroCount;
-        inv.diamantes    += diamanteCount;
+        inv.amatistas += amatistaCount;
+        inv.zafiros += zafiroCount;
+        inv.diamantes += diamanteCount;
 
-        Debug.Log($"Recursos guardados — Arena: {puntosEsteIntento} | Rubíes: {rubiCount} | Esmeraldas: {esmeraldaCount}");
+        Debug.Log(
+            $"Recursos guardados | Arena: {puntosEsteIntento} | Rubíes: {rubiCount}");
     }
 
     void RefreshUI()
     {
         int puntosMaximos = ObtenerPuntosMaximos();
-        if (timerText) timerText.text = $"{Mathf.CeilToInt(timeLeft)}s";
-        if (scoreText) scoreText.text = $"{puntosEsteIntento} / {puntosMaximos} pts";
-        FindObjectOfType<uiJuego>()?.ActualizarRecursos();
+
+        if (timerText != null)
+            timerText.text = $"{Mathf.CeilToInt(timeLeft)}s";
+
+        if (scoreText != null)
+            scoreText.text = $"{puntosEsteIntento} / {puntosMaximos} pts";
+
+        uiJuegoRef?.ActualizarRecursos();
     }
 
     void RefreshGemasUI()
     {
-        int totalGemas = rubiCount + esmeraldaCount + cuarzoCount +
-                         lapisLazuliCount + amatistaCount + zafiroCount + diamanteCount;
+        int totalGemas =
+            rubiCount +
+            esmeraldaCount +
+            cuarzoCount +
+            lapisLazuliCount +
+            amatistaCount +
+            zafiroCount +
+            diamanteCount;
+
+        if (gemasText == null) return;
+
         if (totalGemas > 0)
         {
             gemasText.gameObject.SetActive(true);
-            gemasText.text = $"Rubí: {rubiCount} | Esmeralda: {esmeraldaCount} | Cuarzo: {cuarzoCount} | Lapis: {lapisLazuliCount} | Amatista: {amatistaCount} | Zafiro: {zafiroCount} | Diamante: {diamanteCount}";
+
+            gemasText.text =
+                $"Rubí: {rubiCount} | " +
+                $"Esmeralda: {esmeraldaCount} | " +
+                $"Cuarzo: {cuarzoCount} | " +
+                $"Lapis: {lapisLazuliCount} | " +
+                $"Amatista: {amatistaCount} | " +
+                $"Zafiro: {zafiroCount} | " +
+                $"Diamante: {diamanteCount}";
         }
         else
+        {
             gemasText.gameObject.SetActive(false);
+        }
     }
 }

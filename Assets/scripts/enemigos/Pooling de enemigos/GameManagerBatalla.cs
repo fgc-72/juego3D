@@ -35,7 +35,7 @@ public class GameManagerBatalla : MonoBehaviour
     void Start()
     {
         // Lee el nivel desde la Bruja
-        nivelActual = Bruja.Instancia != null ? Bruja.Instancia.nivelCiudad : 1;
+        nivelActual = GameManagerGeneral.Instancia != null ? GameManagerGeneral.Instancia.nivelCiudad : 1;
         nivelActual = Mathf.Clamp(nivelActual, 1, 3);
 
         puntosMinimos = puntosMinimosPorNivel[nivelActual - 1];
@@ -89,17 +89,17 @@ public class GameManagerBatalla : MonoBehaviour
 
             // Si era el nivel 3 termina el juego, si no sube de nivel
             if (nivelActual >= 3)
-                Bruja.Instancia.FinCiudadGanaste();
+                GameManagerGeneral.Instancia.FinCiudadGanaste();
             else
             {
-                Bruja.Instancia.nivelCiudad = nivelActual + 1;
-                Bruja.Instancia.FinCiudadGanaste();
+                GameManagerGeneral.Instancia.nivelCiudad = nivelActual + 1;
+                GameManagerGeneral.Instancia.FinCiudadGanaste();
             }
         }
         else
         {
             Debug.Log("Perdiste nivel " + nivelActual);
-            Bruja.Instancia.FinCiudadPerdiste();
+            GameManagerGeneral.Instancia.FinCiudadPerdiste();
         }
     }
 
@@ -114,5 +114,16 @@ public class GameManagerBatalla : MonoBehaviour
 
         if (textoPuntos != null)
             textoPuntos.text = $"Puntos: {puntosActuales} / {puntosMinimos}";
+    }
+
+    public void DerrotaPorInvasion()
+    {
+        if (!juegoActivo) return;
+
+        juegoActivo = false;
+
+        Debug.Log("Los enemigos atravesaron el límite");
+
+        GameManagerGeneral.Instancia.FinCiudadPerdiste();
     }
 }

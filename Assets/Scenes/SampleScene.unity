@@ -1689,6 +1689,10 @@ PrefabInstance:
       value: varita_mano
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 551d4ed5d20081444afaeae46d2f48ac, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 551d4ed5d20081444afaeae46d2f48ac, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2189,13 +2193,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 157614345}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pantallas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &157614345
 Transform:
   m_ObjectHideFlags: 0
@@ -2431,7 +2435,7 @@ GameObject:
   - component: {fileID: 179800087}
   - component: {fileID: 179800089}
   - component: {fileID: 179800088}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: PauseMenuText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3489,7 +3493,7 @@ GameObject:
   - component: {fileID: 301897884}
   - component: {fileID: 301897886}
   - component: {fileID: 301897885}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel_ganaste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3639,7 +3643,6 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
-  - component: {fileID: 330585548}
   - component: {fileID: 330585549}
   m_Layer: 0
   m_Name: Main Camera
@@ -3766,18 +3769,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!114 &330585548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29b712afbe9e33743b2f99c0eaca9187, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CamaraJugador
 --- !u!114 &330585549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6328,7 +6319,7 @@ GameObject:
   - component: {fileID: 546428719}
   - component: {fileID: 546428721}
   - component: {fileID: 546428720}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6550,7 +6541,7 @@ GameObject:
   - component: {fileID: 598449875}
   - component: {fileID: 598449877}
   - component: {fileID: 598449876}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6692,7 +6683,7 @@ GameObject:
   - component: {fileID: 608100522}
   - component: {fileID: 608100524}
   - component: {fileID: 608100523}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: UIJUEGO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7349,7 +7340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 665328499}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8153,7 +8144,7 @@ GameObject:
   - component: {fileID: 763434526}
   - component: {fileID: 763434528}
   - component: {fileID: 763434527}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10445,7 +10436,7 @@ GameObject:
   - component: {fileID: 972597184}
   - component: {fileID: 972597186}
   - component: {fileID: 972597185}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel_escape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10582,7 +10573,7 @@ GameObject:
   - component: {fileID: 974513357}
   - component: {fileID: 974513359}
   - component: {fileID: 974513358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11642,6 +11633,10 @@ PrefabInstance:
       value: escoba_mano
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7e25fcaf7f551bc45968f4cbfdc1e9f1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7e25fcaf7f551bc45968f4cbfdc1e9f1, type: 3}
       propertyPath: m_TagString
       value: puertaABatalla
       objectReference: {fileID: 0}
@@ -12571,7 +12566,7 @@ GameObject:
   - component: {fileID: 1125982768}
   - component: {fileID: 1125982767}
   - component: {fileID: 1125982766}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13165,6 +13160,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 7.669923
       objectReference: {fileID: 0}
+    - target: {fileID: -7409424846342233334, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6388209918547770817, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -5680897643487459197, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -35.731407
@@ -13177,6 +13180,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.1993835e-15
       objectReference: {fileID: 0}
+    - target: {fileID: -5608848855117225698, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -5223319992870177079, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
@@ -13184,6 +13191,18 @@ PrefabInstance:
     - target: {fileID: -5223319992870177079, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4847898627286284609, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4724059749494572006, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4091822813227006299, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -2983061892101006603, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13209,9 +13228,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -140.34875
       objectReference: {fileID: 0}
+    - target: {fileID: -542115274602151124, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -126444735043694027, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 772886151465300937, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_Name
       value: brujamrk (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_TagString
@@ -13253,6 +13288,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -92.95924
       objectReference: {fileID: 0}
+    - target: {fileID: 1631791765287486914, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1935490296895527238, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 1.5064486
@@ -13277,6 +13316,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -92.846664
       objectReference: {fileID: 0}
+    - target: {fileID: 2239109455531201754, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2394726099016383667, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824839866465816424, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958912828705562705, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5301502779433533849, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -0.000009669335
@@ -13288,6 +13343,22 @@ PrefabInstance:
     - target: {fileID: 5301502779433533849, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 7.5866637
+      objectReference: {fileID: 0}
+    - target: {fileID: 6236866650730788045, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287625100301717081, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534429954133804549, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8879528566716807029, guid: afcedff2788ebb84380912d221c9f1b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13770,7 +13841,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1185214753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14469,6 +14540,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fixed Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252285020697097, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2929252285020698103, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -14571,7 +14650,7 @@ GameObject:
   - component: {fileID: 1246332755}
   - component: {fileID: 1246332757}
   - component: {fileID: 1246332756}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15102,7 +15181,7 @@ GameObject:
   - component: {fileID: 1258049158}
   - component: {fileID: 1258049160}
   - component: {fileID: 1258049159}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel_viaje_batalla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16978,6 +17057,8 @@ PlayableDirector:
     value: {fileID: 899141524}
   - key: {fileID: -9162916905222459479, guid: a5d3e3c7c6460374da13748bc0c3b272, type: 2}
     value: {fileID: 1251929725}
+  - key: {fileID: -3041008567062367396, guid: a5d3e3c7c6460374da13748bc0c3b272, type: 2}
+    value: {fileID: 1258049157}
   m_ExposedReferences:
     m_References:
     - 7c2e006ea5c41ef43b7e60ff41c112e8: {fileID: 0}
@@ -17018,6 +17099,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   director: {fileID: 1449115800}
   uiJuego: {fileID: 608100521}
+  panelCargaViaje: {fileID: 1258049157}
+  panelCargaVictoria: {fileID: 1628636450}
+  panelCargaDerrota: {fileID: 972597183}
+  nivelCiudad: 0
   pauseMenu: {fileID: 665328498}
   PauseButton: {fileID: 1577918910}
 --- !u!4 &1449115803
@@ -18467,7 +18552,7 @@ GameObject:
   - component: {fileID: 1577918914}
   - component: {fileID: 1577918913}
   - component: {fileID: 1577918912}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: PauseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18725,7 +18810,7 @@ GameObject:
   - component: {fileID: 1592165525}
   - component: {fileID: 1592165527}
   - component: {fileID: 1592165526}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: texto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19084,7 +19169,7 @@ GameObject:
   - component: {fileID: 1628636451}
   - component: {fileID: 1628636453}
   - component: {fileID: 1628636452}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Panel_regreso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19239,7 +19324,7 @@ GameObject:
   - component: {fileID: 1636051168}
   - component: {fileID: 1636051167}
   - component: {fileID: 1636051166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19260,8 +19345,8 @@ RectTransform:
   m_Children:
   - {fileID: 157614345}
   - {fileID: 1592165525}
-  - {fileID: 608100522}
   - {fileID: 665328499}
+  - {fileID: 608100522}
   m_Father: {fileID: 2093862460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -22854,7 +22939,7 @@ GameObject:
   - component: {fileID: 1964365164}
   - component: {fileID: 1964365163}
   - component: {fileID: 1964365162}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: ResumeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23896,10 +23981,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bruja
   animalSeleccionado: {fileID: 0}
   puntoDeInvocacion: {fileID: 1185214753}
-  nivelCiudad: 1
-  panelCargaViaje: {fileID: 1258049157}
-  panelCargaVictoria: {fileID: 1628636450}
-  panelCargaDerrota: {fileID: 972597183}
 --- !u!114 &2093862462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24498,6 +24579,14 @@ MonoBehaviour:
   gameDuration: 30
   pointsPerShape: 2
   orbPenalty: 1
+  spawnPorNivel:
+  - 2
+  - 1.2
+  - 0.7
+  velocidadPorNivel:
+  - 1
+  - 1.7
+  - 2.5
 --- !u!1001 &2113241531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24651,7 +24740,7 @@ GameObject:
   - component: {fileID: 2123310633}
   - component: {fileID: 2123310635}
   - component: {fileID: 2123310634}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

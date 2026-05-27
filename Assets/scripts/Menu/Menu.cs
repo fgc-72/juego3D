@@ -6,14 +6,6 @@ using UnityEngine.UI;
 
 public class MenuButtons : MonoBehaviour
 {
-    public float sliderValue;
-    public Slider sliderVolumen;
-
-    void Start()
-    {
-        sliderVolumen.value = PlayerPrefs.GetFloat("volumenAudio", 0.5f);
-        AudioListener.volume = sliderVolumen.value;
-    }
 
     public void ChangeSliderVolume(float valorVolumen)
     {

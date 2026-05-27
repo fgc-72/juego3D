@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManagerGeneral : MonoBehaviour
 {
@@ -9,6 +11,14 @@ public class GameManagerGeneral : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private GameObject uiJuego;
+
+    [Header("Paneles de carga")]
+    [SerializeField] GameObject panelCargaViaje;
+    [SerializeField] GameObject panelCargaVictoria;
+    [SerializeField] GameObject panelCargaDerrota;
+    float tiempoCarga = 2f;
+    public int nivelCiudad = 0; 
+
     
     [Header("Pause Menu")]
     public GameObject pauseMenu;
@@ -25,6 +35,36 @@ public class GameManagerGeneral : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        // Inicializa el inventario con los valores de nivel 0
+        AplicarBeneficiosDeNivel();
+    }
+
+    public void AplicarBeneficiosDeNivel()
+    {
+        var inv = InventarioJugador.Instancia;
+        if (inv == null) return;
+
+        switch (nivelCiudad)
+        {
+            case 0: inv.magia = 20; break;
+            case 1: inv.magia = 40; break;
+            case 2: inv.magia = 60; break;
+        }
+
+        Debug.Log($"Nivel {nivelCiudad} — Magia: {inv.magia}");
+    }
+
+    public bool PuedeViajarACiudad() => nivelCiudad > 0;
+
+    public void SubirNivel()
+    {
+        nivelCiudad = Mathf.Min(nivelCiudad + 1, 2);
+        AplicarBeneficiosDeNivel();
+        Debug.Log("Subió al nivel " + nivelCiudad);
     }
 
     //cinematicas
@@ -59,5 +99,55 @@ public class GameManagerGeneral : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    /*viajes*/
+
+    public void ViajarACiudad(int nivel)
+    {
+        if (!PuedeViajarACiudad())
+        {
+            Debug.Log("Necesitas subir de nivel primero");
+            return;
+        }
+
+        // NUEVO
+        if (!InventarioJugador.Instancia.TieneAnimales())
+        {
+            Debug.Log("No tienes animales creados para viajar");
+            return;
+        }
+
+        StartCoroutine(CargarConPanel(panelCargaViaje, "ciudad1"));
+    }
+
+    public void FinCiudadGanaste()
+    {
+        StartCoroutine(CargarConPanel(panelCargaVictoria, "SampleScene"));
+    }
+
+    public void FinCiudadPerdiste()
+    {
+        StartCoroutine(CargarConPanel(panelCargaDerrota, "SampleScene"));
+    }
+
+    IEnumerator CargarConPanel(GameObject panel, string escenaDestino)
+    {
+
+        panel.SetActive(true);
+
+        AsyncOperation carga = SceneManager.LoadSceneAsync(escenaDestino);
+        carga.allowSceneActivation = false;
+
+        float tiempoTranscurrido = 0f;
+        while (tiempoTranscurrido < tiempoCarga || carga.progress < 0.9f)
+        {
+            tiempoTranscurrido += Time.deltaTime;
+            yield return null;
+        }
+
+        carga.allowSceneActivation = true;
+        yield return new WaitForEndOfFrame();
+        panel.SetActive(false);
     }
 }

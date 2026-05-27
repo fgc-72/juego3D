@@ -9,14 +9,6 @@ public class Bruja : MonoBehaviour
     public DatosAnimal animalSeleccionado;
     public Transform puntoDeInvocacion;
     private UiBatalla ui;
-    public int nivelCiudad = 1; 
-
-    [Header("Paneles de carga")]
-    [SerializeField] GameObject panelCargaViaje;
-    [SerializeField] GameObject panelCargaVictoria;
-    [SerializeField] GameObject panelCargaDerrota;
-    float tiempoCarga = 2f;
-
 
     public static Bruja Instancia { get; private set; }
 
@@ -140,42 +132,5 @@ public class Bruja : MonoBehaviour
     }
 
 
-    public void ViajarACiudad(int nivel)
-    {
-        nivelCiudad = nivel;
-        StartCoroutine(CargarConPanel(panelCargaViaje, "ciudad1"));
-    }
-
-    public void FinCiudadGanaste()
-    {
-
-        ArenaGManager.ResetearProgreso();
-        nivelCiudad = Mathf.Min(nivelCiudad + 1, 3);
-        StartCoroutine(CargarConPanel(panelCargaVictoria, "SampleScene"));
-    }
-
-    public void FinCiudadPerdiste()
-    {
-        StartCoroutine(CargarConPanel(panelCargaDerrota, "SampleScene"));
-    }
-
-    IEnumerator CargarConPanel(GameObject panel, string escenaDestino)
-    {
-
-        panel.SetActive(true);
-
-        AsyncOperation carga = SceneManager.LoadSceneAsync(escenaDestino);
-        carga.allowSceneActivation = false;
-
-        float tiempoTranscurrido = 0f;
-        while (tiempoTranscurrido < tiempoCarga || carga.progress < 0.9f)
-        {
-            tiempoTranscurrido += Time.deltaTime;
-            yield return null;
-        }
-
-        carga.allowSceneActivation = true;
-        yield return new WaitForEndOfFrame();
-        panel.SetActive(false);
-    }
+    
 }

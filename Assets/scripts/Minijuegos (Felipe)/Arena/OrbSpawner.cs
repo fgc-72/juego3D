@@ -10,8 +10,8 @@ public class OrbSpawner : MonoBehaviour
     [Header("Prefab")]
     public GameObject orbPrefab;
 
-    public float spawnInterval   = 3f;
-    public float orbSpeed        = 1.5f;
+    [HideInInspector] public float spawnInterval = 2f;
+    [HideInInspector] public float orbSpeed = 1f;
     public int   maxShapesPerOrb = 3;
 
     public event Action<Orb> OnOrbReachedCenter;
@@ -30,7 +30,7 @@ public class OrbSpawner : MonoBehaviour
 
     IEnumerator SpawnLoop()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(spawnInterval);
         while (true)
         {
             SpawnOrb();

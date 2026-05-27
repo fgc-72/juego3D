@@ -71,7 +71,7 @@ public class arena_boton : MonoBehaviour
     {
         if (Bruja.Instancia != null)
         {
-            Bruja.Instancia.ViajarACiudad(1);
+            GameManagerGeneral.Instancia.ViajarACiudad(1);
         }
     }
 

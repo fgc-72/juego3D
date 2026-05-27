@@ -30,8 +30,24 @@ public class InventarioJugador : MonoBehaviour
             return;
         }
         Instancia = this;
+        Inicializar(); // valores por defecto al arrancar
     }
 
+    public void Inicializar()
+    {
+        arena = 0;
+        magia = 20; 
+        monedas = 0;
+        rubies = 0;
+        cuarzos = 0;
+        lapislazulis = 0;
+        amatistas = 0;
+        diamantes = 0;
+        zafiros = 0;
+        esmeraldas = 0;
+        animalesFabricados.Clear();
+    }
+    
     public bool TieneRecursos(int arenaRequerida, int magiaRequerida)
     {
         return arena >= arenaRequerida && magia >= magiaRequerida;
@@ -57,6 +73,17 @@ public class InventarioJugador : MonoBehaviour
     public bool TieneAnimal(DatosAnimal datos)
     {
         return animalesFabricados.ContainsKey(datos) && animalesFabricados[datos] > 0;
+    }
+
+    public bool TieneAnimales()
+    {
+        foreach (var animal in animalesFabricados)
+        {
+            if (animal.Value > 0)
+                return true;
+        }
+
+        return false;
     }
 
     public void UsarAnimal(DatosAnimal datos)
