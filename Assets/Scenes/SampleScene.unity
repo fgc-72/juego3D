@@ -8527,7 +8527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236716be48f8ba74c81df6c3b31f8a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::arena_boton
-  distanciaInteraccion: 10
+  distanciaInteraccion: 22
   botonInteraccion: {fileID: 1333937479}
   uiJuego: {fileID: 608100521}
 --- !u!1001 &806493302
@@ -17119,7 +17119,7 @@ MonoBehaviour:
   uiJuego: {fileID: 608100521}
   panelCargaViaje: {fileID: 1258049157}
   panelCargaVictoria: {fileID: 1628636450}
-  panelRecursos: {fileID: 0}
+  panelRecursos: {fileID: 1251929725}
   panelCargaDerrota: {fileID: 972597183}
   nivelCiudad: 0
   pauseMenu: {fileID: 665328498}

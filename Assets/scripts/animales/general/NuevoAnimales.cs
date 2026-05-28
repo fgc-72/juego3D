@@ -105,30 +105,22 @@ public class NuevoAnimales : MonoBehaviour
     // INVOCAR
     // =========================
 
-    public static void InvocarAnimal(
-        DatosAnimal datos,
-        Vector3 posicion,
-        Quaternion rotacion
-    )
+    public void InvocarAnimal(Vector3 posicion, Quaternion rotacion) // Para invocar animales desde el inventario
     {
         if (!InventarioJugador.Instancia.TieneAnimal(datos))
         {
-            Debug.Log($"No quedan {datos.nombre}");
+            Debug.Log($"No quedan {datos.nombre} en el inventario.");
             return;
         }
 
         InventarioJugador.Instancia.UsarAnimal(datos);
 
-        GameObject nuevo = Instantiate(
-            datos.prefab3D,
-            posicion,
-            rotacion
-        );
+        GameObject nuevo = Instantiate(datos.prefab3D, posicion, rotacion);
 
-        AnimalesGeneral animal = nuevo.GetComponent<AnimalesGeneral>();
-
-        if (animal != null)
-            animal.datos = datos;
+        
+        Rigidbody rb = nuevo.GetComponent<Rigidbody>(); // para impulsar a los animales en la dirección que mira la bruja al invocarlos
+        if (rb != null)
+            rb.linearVelocity = rotacion * Vector3.forward * datos.velocidad;
     }
 }
 

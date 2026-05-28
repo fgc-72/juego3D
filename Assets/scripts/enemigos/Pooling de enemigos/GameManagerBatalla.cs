@@ -18,7 +18,7 @@ public class GameManagerBatalla : MonoBehaviour
     // Configuración por nivel
     private int[] enemigosPorNivel  = { 10, 20, 40 };
     private int[] puntosMinimosPorNivel = { 5, 10, 20 };
-    private float tiempoPorNivel = 12f; // mismo tiempo para todos, ajusta si quieres
+    private float tiempoPorNivel = 50f; // mismo tiempo para todos, ajusta si quieres
 
     private int nivelActual;
     private int puntosMinimos;
