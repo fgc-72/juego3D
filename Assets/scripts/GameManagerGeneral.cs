@@ -16,6 +16,7 @@ public class GameManagerGeneral : MonoBehaviour
     [Header("Paneles de carga")]
     [SerializeField] GameObject panelCargaViaje;
     [SerializeField] GameObject panelCargaVictoria;
+    [SerializeField] GameObject panelRecursos;
     [SerializeField] GameObject panelCargaDerrota;
     float tiempoCarga = 2f;
     public int nivelCiudad = 0; 
@@ -47,27 +48,30 @@ public class GameManagerGeneral : MonoBehaviour
 
     IEnumerator IntroBruja()
     {
+         yield return new WaitForSeconds(2f);
+
         texto.Instancia.MostrarMensaje(
             "Eso estuvo cerca, casi me atrapan los cazadores..."
         );
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
 
         texto.Instancia.MostrarMensaje(
             "por suerte tenia mi escoba cerca"
         );
 
-         yield return new WaitForSeconds(4f);
+         yield return new WaitForSeconds(2f);
 
         texto.Instancia.MostrarMensaje(
-            "ya no tengo mana para seguir volando, creo que nadie vive en esta granja... la usare como refugio por ahora"
+            "ya no tengo magia para seguir volando, creo que nadie vive en esta granja... la usaré como refugio por ahora"
         );
 
-         yield return new WaitForSeconds(4f);
+         yield return new WaitForSeconds(5f);
 
         texto.Instancia.MostrarMensaje(
             "tal vez pueda aprovchar la arena para crear unos cuantos soldados de cristal... lo que le hicieron a mis hermanas lo van a pagar"
         );
+         yield return new WaitForSeconds(3f);
     }
 
     public void AplicarBeneficiosDeNivel()
@@ -93,6 +97,15 @@ public class GameManagerGeneral : MonoBehaviour
         AplicarBeneficiosDeNivel();
     }
 
+    public void InicioJuego()
+    {
+        if(nivelCiudad == 0)
+            StartCoroutine(IntroBruja());
+        else
+            pauseMenu.SetActive(false);
+            uiJuego.SetActive(true);
+    }
+
     //cinematicas
 
     public void InicioJuegoCinematica()
@@ -106,14 +119,14 @@ public class GameManagerGeneral : MonoBehaviour
     {
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
-        PauseButton.SetActive(false);
+        uiJuego.SetActive(false);
     }
 
     public void ResumeGame()
     {
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
-        PauseButton.SetActive(true);
+        uiJuego.SetActive(true);
     }
 
     public void MainMenu()
@@ -144,7 +157,7 @@ public class GameManagerGeneral : MonoBehaviour
             texto.Instancia.MostrarMensaje("Necesitas fabricar animales para viajar");
             return;
         }
-
+        
         StartCoroutine(CargarConPanel(panelCargaViaje, "ciudad1"));
     }
 
@@ -160,7 +173,8 @@ public class GameManagerGeneral : MonoBehaviour
 
     IEnumerator CargarConPanel(GameObject panel, string escenaDestino)
     {
-
+        panelRecursos.SetActive(false);
+        uiJuego.SetActive(false);
         panel.SetActive(true);
 
         AsyncOperation carga = SceneManager.LoadSceneAsync(escenaDestino);
@@ -176,6 +190,7 @@ public class GameManagerGeneral : MonoBehaviour
         carga.allowSceneActivation = true;
         yield return new WaitForEndOfFrame();
         panel.SetActive(false);
+        uiJuego.SetActive(true);
     }  
 }
 

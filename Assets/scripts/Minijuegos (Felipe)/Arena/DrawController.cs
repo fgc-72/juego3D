@@ -12,8 +12,8 @@ public class DrawController : MonoBehaviour
     public Color lineColor = Color.white;
 
     [Header("Sensibilidad")]
-    public float minPointDistance = 0.08f;
-    public int minPoints = 3;
+    public float minPointDistance = 3f;
+    public int minPoints = 1;
 
     public event Action<ShapeType> OnShapeDrawn;
 
@@ -29,7 +29,7 @@ public class DrawController : MonoBehaviour
         cam = Camera.main;
 
         lr = GetComponent<LineRenderer>();
-        lr.useWorldSpace = true;
+        lr.useWorldSpace = false;
         lr.startWidth = lineWidth;
         lr.endWidth = lineWidth;
         lr.startColor = lineColor;
@@ -48,32 +48,65 @@ public class DrawController : MonoBehaviour
 
     void HandleTouch()
     {
-        // Esto emula el dedo con el mouse, luego se puede borrar
-        if (Input.GetMouseButtonDown(0))
+        // -------- TOUCH REAL PARA CELULAR --------
+        if (Input.touchCount > 0)
         {
-            BeginDraw(Input.mousePosition);
-            return;
-        }
-        if (Input.GetMouseButton(0) && drawing)
-        {
-            AppendPoint(Input.mousePosition);
-            return;
-        }
-        if (Input.GetMouseButtonUp(0) && drawing)
-        {
-            FinishDraw();
+            Touch t = Input.GetTouch(0);
+
+            switch (t.phase)
+            {
+                case TouchPhase.Began:
+                    BeginDraw(t.position);
+                    break;
+
+                case TouchPhase.Moved:
+                case TouchPhase.Stationary:
+
+                    if (drawing)
+                    {
+                        AppendPoint(t.position);
+
+                        // Detecta apenas haya movimiento suficiente
+                        if (points.Count >= 2)
+                        {
+                            ShapeType shape = Scanner.Recognize(points);
+                            OnShapeDrawn?.Invoke(shape);
+
+                            // Reinicia inmediatamente
+                            points.Clear();
+                            lr.positionCount = 0;
+
+                            AddToLine(t.position);
+                        }
+                    }
+
+                    break;
+
+                case TouchPhase.Ended:
+                case TouchPhase.Canceled:
+                    if (drawing)
+                        FinishDraw();
+                    break;
+            }
+
             return;
         }
 
-        if (Input.touchCount == 0) return;
-        Touch t = Input.GetTouch(0);
-        switch (t.phase)
+        // -------- MOUSE SOLO PARA EDITOR / PC --------
+    #if UNITY_EDITOR
+        if (Input.GetMouseButtonDown(0))
         {
-            case TouchPhase.Began: BeginDraw(t.position); break;
-            case TouchPhase.Moved: if (drawing) AppendPoint(t.position); break;
-            case TouchPhase.Ended:
-            case TouchPhase.Canceled: if (drawing) FinishDraw(); break;
+            BeginDraw(Input.mousePosition);
         }
+        else if (Input.GetMouseButton(0) && drawing)
+        {
+            AppendPoint(Input.mousePosition);
+        }
+        else if (Input.GetMouseButtonUp(0) && drawing)
+        {
+            FinishDraw();
+        }
+    #endif
     }
 
     void BeginDraw(Vector3 screenPos)
@@ -85,11 +118,23 @@ public class DrawController : MonoBehaviour
     }
 
     void AppendPoint(Vector3 screenPos)
+{
+    Vector2 wp = ToWorld(screenPos);
+
+    if (points.Count == 0)
     {
-        Vector2 wp = ToWorld(screenPos);
-        if (points.Count == 0 || Vector2.Distance(wp, points[points.Count - 1]) >= minPointDistance)
-            AddToLine(screenPos);
+        AddToLine(screenPos);
+        return;
     }
+
+    float distance = Vector2.Distance(wp, points[points.Count - 1]);
+
+    // Mucho más sensible para móvil
+    if (distance >= 0.005f)
+    {
+        AddToLine(screenPos);
+    }
+}
 
     void FinishDraw()
     {
@@ -110,13 +155,12 @@ public class DrawController : MonoBehaviour
         Vector2 wp = ToWorld(screenPos);
         points.Add(wp);
         lr.positionCount = points.Count;
-        lr.SetPosition(points.Count - 1, new Vector3(wp.x, wp.y, -2f));
+        lr.SetPosition(points.Count - 1, new Vector3(wp.x, wp.y, 0f));
     }
 
     Vector2 ToWorld(Vector3 screenPos)
-    {
-        float depth = Mathf.Abs(cam.transform.position.z);
-        Vector3 w = cam.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, depth));
-        return new Vector2(w.x, w.y);
-    }
+{
+    return screenPos;
 }
+}
+

@@ -63,6 +63,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 729eaae67386f414f98bf80b45d1b7a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3997781416019767462}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 729eaae67386f414f98bf80b45d1b7a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1707844990998158863}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 729eaae67386f414f98bf80b45d1b7a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5344095297788231590}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 729eaae67386f414f98bf80b45d1b7a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6019034746905295444}
   m_SourcePrefab: {fileID: 100100000, guid: 729eaae67386f414f98bf80b45d1b7a6, type: 3}
 --- !u!1 &4325181383768907036 stripped
 GameObject:
@@ -88,5 +97,59 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.2495668, y: 5.147748, z: 9.172447}
-  m_Center: {x: 0, y: 2.505828, z: 0.8099866}
+  m_Size: {x: 2.2495668, y: 5.147748, z: 3.6721272}
+  m_Center: {x: 0, y: 2.505828, z: 0.16363645}
+--- !u!114 &1707844990998158863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325181383768907036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ed404ca3c951e4e8fffbe62c3acb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NuevoAnimales
+  datos: {fileID: 11400000, guid: b619d051380f88d489d2fcaf6336e164, type: 2}
+--- !u!114 &5344095297788231590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325181383768907036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e92f22b41252fc43a7f72e5dac8aa5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalNPC
+  velocidad: 2
+  tiempoEspera: 3
+--- !u!54 &-6019034746905295444
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325181383768907036}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0

@@ -3,28 +3,37 @@ using UnityEngine;
 
 public static class Scanner
 {
-    private const float DIRECTION_THRESHOLD = 0.6f;
+    private const float DIRECTION_THRESHOLD = 0.15f;
+    private const float MIN_SWIPE_DISTANCE = 10f;
 
     public static ShapeType Recognize(List<Vector2> rawPoints)
     {
-        if (rawPoints == null || rawPoints.Count < 3)
+        if (rawPoints == null || rawPoints.Count < 2)
             return ShapeType.Down;
 
-        // Calcular dirección general del trazo
         Vector2 start = rawPoints[0];
         Vector2 end = rawPoints[rawPoints.Count - 1];
-        Vector2 direction = (end - start).normalized;
 
-        // Determinar dirección predominante
+        Vector2 delta = end - start;
+
+        // evita micro movimientos accidentales
+        if (delta.magnitude < MIN_SWIPE_DISTANCE)
+            return ShapeType.Down;
+
+        Vector2 direction = delta.normalized;
+
         if (Mathf.Abs(direction.y) > Mathf.Abs(direction.x))
         {
-            // Movimiento vertical
-            return direction.y > DIRECTION_THRESHOLD ? ShapeType.Up : ShapeType.Down;
+            return direction.y > 0
+                ? ShapeType.Up
+                : ShapeType.Down;
         }
         else
         {
-            // Movimiento horizontal
-            return direction.x > DIRECTION_THRESHOLD ? ShapeType.Right : ShapeType.Left;
+            return direction.x > 0
+                ? ShapeType.Right
+                : ShapeType.Left;
         }
     }
+
 }

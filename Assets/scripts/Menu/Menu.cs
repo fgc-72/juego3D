@@ -18,7 +18,7 @@ public class MenuButtons : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        GameManagerGeneral.Instancia.InicioJuegoCinematica();
+        GameManagerGeneral.Instancia.InicioJuego();
     }
 
     public void Quit()

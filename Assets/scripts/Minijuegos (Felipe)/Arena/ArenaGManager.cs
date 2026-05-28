@@ -26,8 +26,8 @@ public class ArenaGManager : MonoBehaviour
     private int[] maximoArena = { 20, 40, 60 };
 
     [Header("Dificultad por nivel")]
-    [SerializeField] private float[] spawnPorNivel = { 2f, 1.2f, 0.7f };
-    [SerializeField] private float[] velocidadPorNivel = { 1f, 1.7f, 2.5f };
+    [SerializeField] private float[] spawnPorNivel = { 2.5f, 1.8f, 1.2f };
+    [SerializeField] private float[] velocidadPorNivel = { 0.8f, 1.2f, 1.7f };
 
     public event Action<float> OnGameEnded;
 
