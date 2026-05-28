@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.SceneManagement;
 public class cabra : AnimalesGeneral
 {
@@ -48,4 +48,4 @@ public class cabra : AnimalesGeneral
             Movimiento();
         }
     }
-}
+}*/

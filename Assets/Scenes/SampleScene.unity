@@ -1212,7 +1212,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!1001 &105191111
 PrefabInstance:
@@ -10596,8 +10596,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.0003376}
-  m_SizeDelta: {x: 1920, y: 217.38}
+  m_AnchoredPosition: {x: 15.3579, y: -2.1354}
+  m_SizeDelta: {x: 1809.023, y: 163.7478}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974513358
 MonoBehaviour:
@@ -17017,6 +17017,7 @@ GameObject:
   - component: {fileID: 1449115802}
   - component: {fileID: 1449115801}
   - component: {fileID: 1449115800}
+  - component: {fileID: 1449115804}
   m_Layer: 0
   m_Name: GAMEMANAGERGENERAL
   m_TagString: Untagged
@@ -17120,6 +17121,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1449115804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449115799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac99bfbe8be1124bb58d0f32eff51d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::texto
+  panelMensaje: {fileID: 1592165524}
+  textoMensaje: {fileID: 974513358}
+  panelRecursos: {fileID: 1251929725}
+  panelRecursosBatalla: {fileID: 0}
+  velocidadEscritura: 0.03
+  tiempoVisible: 2
 --- !u!1 &1458432259
 GameObject:
   m_ObjectHideFlags: 0
@@ -18816,7 +18835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1592165525
 RectTransform:
   m_ObjectHideFlags: 0

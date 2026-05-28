@@ -12,6 +12,7 @@ public class GameManagerGeneral : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject uiJuego;
 
+
     [Header("Paneles de carga")]
     [SerializeField] GameObject panelCargaViaje;
     [SerializeField] GameObject panelCargaVictoria;
@@ -41,6 +42,32 @@ public class GameManagerGeneral : MonoBehaviour
     {
         // Inicializa el inventario con los valores de nivel 0
         AplicarBeneficiosDeNivel();
+        StartCoroutine(IntroBruja());
+    }
+
+    IEnumerator IntroBruja()
+    {
+        texto.Instancia.MostrarMensaje(
+            "Eso estuvo cerca, casi me atrapan los cazadores..."
+        );
+
+        yield return new WaitForSeconds(5f);
+
+        texto.Instancia.MostrarMensaje(
+            "por suerte tenia mi escoba cerca"
+        );
+
+         yield return new WaitForSeconds(4f);
+
+        texto.Instancia.MostrarMensaje(
+            "ya no tengo mana para seguir volando, creo que nadie vive en esta granja... la usare como refugio por ahora"
+        );
+
+         yield return new WaitForSeconds(4f);
+
+        texto.Instancia.MostrarMensaje(
+            "tal vez pueda aprovchar la arena para crear unos cuantos soldados de cristal... lo que le hicieron a mis hermanas lo van a pagar"
+        );
     }
 
     public void AplicarBeneficiosDeNivel()
@@ -64,7 +91,6 @@ public class GameManagerGeneral : MonoBehaviour
     {
         nivelCiudad = Mathf.Min(nivelCiudad + 1, 2);
         AplicarBeneficiosDeNivel();
-        Debug.Log("Subió al nivel " + nivelCiudad);
     }
 
     //cinematicas
@@ -107,6 +133,7 @@ public class GameManagerGeneral : MonoBehaviour
     {
         if (!PuedeViajarACiudad())
         {
+            texto.Instancia.MostrarMensaje("Necesitas subir de nivel primero");
             Debug.Log("Necesitas subir de nivel primero");
             return;
         }
@@ -114,7 +141,7 @@ public class GameManagerGeneral : MonoBehaviour
         // NUEVO
         if (!InventarioJugador.Instancia.TieneAnimales())
         {
-            Debug.Log("No tienes animales creados para viajar");
+            texto.Instancia.MostrarMensaje("Necesitas fabricar animales para viajar");
             return;
         }
 
@@ -149,5 +176,6 @@ public class GameManagerGeneral : MonoBehaviour
         carga.allowSceneActivation = true;
         yield return new WaitForEndOfFrame();
         panel.SetActive(false);
-    }
+    }  
 }
+

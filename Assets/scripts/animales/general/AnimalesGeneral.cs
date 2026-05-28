@@ -4,7 +4,7 @@ public abstract class AnimalesGeneral : MonoBehaviour
 {
     public DatosAnimal datos;
 
-    public abstract void Atacar(int datos.daño);// sirve para que cada animal tenga un ataque diferente
+    public abstract void Atacar(/*int daño*/); // sirve para que cada animal tenga un ataque diferente
     public abstract void Morir(); // sirve para que cada animal tenga una animacion de muerte diferente
     public abstract void Spawn(); //sirve para que cada animal trenga una animacion de spawn diferente
     public abstract void Movimiento();// sirve para que cada animal tenga un movimiento diferente

@@ -15,7 +15,7 @@ MonoBehaviour:
   nombre: vaca
   icono: {fileID: 21300000, guid: a4bb4032d40d0434983e7b6e0848b7f2, type: 3}
   tipo: 4
-  prefab3D: {fileID: 8949121849539734564, guid: 819e17171c7a5ba479666482cc0ee5e5, type: 3}
+  prefab3D: {fileID: 4325181383768907036, guid: 20c0481b319212142982b8801d46a8ac, type: 3}
   zonaSpawn: {fileID: 5867042299195544336, guid: 408fadfe3c0e5e94389f2af196ec4ca8, type: 3}
   vida: 25
   resistencia: 10

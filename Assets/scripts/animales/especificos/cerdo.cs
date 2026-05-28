@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class cerdo : AnimalesGeneral
@@ -29,7 +29,7 @@ public class cerdo : AnimalesGeneral
         }
     }
 
-    public override void Atacar( int daño)
+    public override void Atacar()
     {
     }
 
@@ -50,4 +50,4 @@ public class cerdo : AnimalesGeneral
             Movimiento();
         }
     }
-}
+}*/

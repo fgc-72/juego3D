@@ -9,7 +9,7 @@ public class limiteTrigger : MonoBehaviour
     {
         if (other.CompareTag("Enemigo"))
         {
-            //GameManagerBatalla.DerrotaPorInvasion();
+            gameManagerBatalla.DerrotaPorInvasion();
         }
     }
     

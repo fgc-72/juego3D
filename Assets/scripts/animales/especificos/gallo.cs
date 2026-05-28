@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.SceneManagement;
 public class gallo : AnimalesGeneral
 {
@@ -49,4 +49,4 @@ public class gallo : AnimalesGeneral
             Movimiento();
         }
     }
-}
+}*/

@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class vaca : AnimalesGeneral
@@ -50,4 +50,4 @@ public class vaca : AnimalesGeneral
             Movimiento();
         }
     }
-}
+}*/

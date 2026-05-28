@@ -15,7 +15,7 @@ public class DatosAnimal : ScriptableObject
     [Header("Stats")] // IMPORTANTE: Aca es lo que tiene que referenciar para las mecanicas de batalla
     public float vida;
     public float resistencia;
-    public float daño;
+    public int daño;
     public float velocidad;
 
     [Header("Costo")]

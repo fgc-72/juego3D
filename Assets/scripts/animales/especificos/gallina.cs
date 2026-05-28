@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.SceneManagement;
 public class gallina : AnimalesGeneral
 {
@@ -49,4 +49,4 @@ public class gallina : AnimalesGeneral
             Movimiento();
         }
     }
-}
+}*/
