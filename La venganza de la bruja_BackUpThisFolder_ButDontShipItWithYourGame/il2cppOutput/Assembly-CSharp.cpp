@@ -306,8 +306,8 @@ struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC;
 struct U3CCronometroU3Ed__19_t8630786029934060A71A9C2DA42F1616A5111AE0;
-struct U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310;
-struct U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB;
+struct U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13;
+struct U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct U3CSpawnLoopU3Ed__20_t398883384D77A079220E039ACE35998FA32791C0;
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401;
@@ -361,10 +361,10 @@ IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9
 IL2CPP_EXTERN_C RuntimeClass* Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CBuscarCamaraU3Ed__15_tC401C6369FE5262846DEAB2DB12A5030E5347623_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CBuscarUIU3Ed__11_t21EBD3F175DE99B057F5FBD722D2B5C8A5A5194B_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CCronometroU3Ed__19_t8630786029934060A71A9C2DA42F1616A5111AE0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CEscribirMensajeU3Ed__10_t38F3502A40B48AC35F244F36D443B462C380536F_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CMostrarAlertaExitoU3Ed__10_tC33CEDD78921F7C91D84F4B012BEF87BD6BDB2D5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CMostrarAlertaU3Ed__9_tF235BC8813F807CC4B9DB4BD2E5F29335E0FDA9A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CMostrarResultadoYCerrarU3Ed__39_tD95669C0A65CD2863D594A1308254C1BCA46ECD0_il2cpp_TypeInfo_var;
@@ -572,10 +572,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_get_Count_m4919DDCBE33986F2E78A14EE
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_get_Count_m63EB352CDC9F12E3141775BB74938A69685DE1D7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CBuscarCamaraU3Ed__15_System_Collections_IEnumerator_Reset_mC5A750959FD0CA80845CBC7F55F09CB287D4EE4A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CBuscarUIU3Ed__11_System_Collections_IEnumerator_Reset_m608B32F7BCA30165E5B057CCFB8FF80537640936_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CCargarConPanelU3Ed__28_System_Collections_IEnumerator_Reset_m21AB10DC6AF5C030E1DE384D848CCA34F4D923B6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CCargarConPanelU3Ed__29_System_Collections_IEnumerator_Reset_m91F2448D1CC94A4DDE7E6D03E2A9C504421E853A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CCronometroU3Ed__19_System_Collections_IEnumerator_Reset_mE7BF5C2B123760D95F8CCBEECC84BB78A74DB4F6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CEscribirMensajeU3Ed__10_System_Collections_IEnumerator_Reset_mEA658F7BCA28413D1F670511A4408654CC73EF06_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CIntroBrujaU3Ed__15_System_Collections_IEnumerator_Reset_m45D26A2716C8F20233C3E8F9709C6B3095FB98FC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CIntroBrujaU3Ed__16_System_Collections_IEnumerator_Reset_mC79BE5563CDF917F7D3388D663F1564DCF36E961_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CMostrarAlertaExitoU3Ed__10_System_Collections_IEnumerator_Reset_m5579CEFC4587B6C50A6A2D2B328495D5DC4295BA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CMostrarAlertaU3Ed__9_System_Collections_IEnumerator_Reset_mB336311793BE2EF39F45C4AD3C450970D56AF074_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CMostrarResultadoYCerrarU3Ed__39_System_Collections_IEnumerator_Reset_mF5C653DE881F10371F00AFEA4AA8378DBE138DED_RuntimeMethod_var;
@@ -999,17 +999,17 @@ struct U3CCronometroU3Ed__19_t8630786029934060A71A9C2DA42F1616A5111AE0  : public
 	RuntimeObject* ___U3CU3E2__current;
 	GameManagerBatalla_t334780C6A29FB51E2CB2AA09159EEDF48CB402BF* ___U3CU3E4__this;
 };
-struct U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310  : public RuntimeObject
+struct U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
+	GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* ___U3CU3E4__this;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___panel;
 	String_t* ___escenaDestino;
-	GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* ___U3CU3E4__this;
 	AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* ___U3CcargaU3E5__2;
 	float ___U3CtiempoTranscurridoU3E5__3;
 };
-struct U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB  : public RuntimeObject
+struct U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -2798,6 +2798,7 @@ struct GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE  : public Mo
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___uiJuego;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___panelCargaViaje;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___panelCargaVictoria;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___panelRecursos;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___panelCargaDerrota;
 	float ___tiempoCarga;
 	int32_t ___nivelCiudad;
@@ -4199,7 +4200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_AplicarBeneficiosDeNivel_m3892D3D5333B75D7E1FAB4F69927611B54A037EF (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManagerGeneral_IntroBruja_mE960D9B9E2478A99F0AD529E89531F9F51C071E3 (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroBrujaU3Ed__15__ctor_mB714A92071E3B0A1DDFE46D4D0A3B25BA38FBA2B (U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroBrujaU3Ed__16__ctor_mE6411674770C0B9210507AFC324B8985FD8571F6 (U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* InventarioJugador_get_Instancia_mB69A539C620520ADE568491FEDE3692032D96108_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
@@ -4212,7 +4213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameManagerGeneral_PuedeViajarACiudad_m8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void texto_MostrarMensaje_mB5B4468906193DF57904C8483D1B6A18133A941B (texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677* __this, String_t* ___0_mensaje, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InventarioJugador_TieneAnimales_mD947E6F97111D533F374A8FD1CF96D63F421A47C (InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManagerGeneral_CargarConPanel_m888041E129E1E86B593D071EEFEC70A54ABCA349 (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_panel, String_t* ___1_escenaDestino, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCargarConPanelU3Ed__28__ctor_m5000A824029C3495C7764927FB91433A7916F8CB (U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCargarConPanelU3Ed__29__ctor_m7B0B96FC5E46223C72753C5D20899553F13313B6 (U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* SceneManager_LoadSceneAsync_m84D316B1993A4E69F9E8CDE30531687B701F9300 (String_t* ___0_sceneName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncOperation_set_allowSceneActivation_mBD94FAB342455508CD7962D3CED490C64AF74522 (AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
@@ -4555,11 +4556,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTrigger_mC9CD54D627C8843EF6E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE46311674ED463B180006 (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, String_t* ___3_str3, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NuevoAnimales_Morir_m314BF76FF1CCB3CB0DB16953619E23CB3F1B529A (NuevoAnimales_t198EC292E6B1F952B2780D1184D0D2D5DC8BBD98* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
-inline AnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB* GameObject_GetComponent_TisAnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB_mD657E0BAB4C42B4D61E3F872AD2B366D604087B0 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
-{
-	return ((  AnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_mB237DEA6244132670D38990BAB77D813FBB028D2 (int32_t ___0_key, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveManager_IniciarOleada_m201592CE7770BC951DD94934CB6AC2610E8458F3 (WaveManager_t432EF298E8C09678E15239E5EF95239F5B4AC141* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GameManagerBatalla_t334780C6A29FB51E2CB2AA09159EEDF48CB402BF* GameManagerBatalla_get_Instance_mD3256D03A8ADC2DCEA46356397C89BB13D8C3DD0_inline (const RuntimeMethod* method) ;
@@ -4568,6 +4564,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerBatalla_ConfigurarOleada_m09C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerBatalla_ActualizarUI_m97FAEF445F8328A7F7D483FD3D5F2977D5EA1AAE (GameManagerBatalla_t334780C6A29FB51E2CB2AA09159EEDF48CB402BF* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManagerBatalla_Cronometro_m947860DEE338D68B4EF66027CB323E2169B0B400 (GameManagerBatalla_t334780C6A29FB51E2CB2AA09159EEDF48CB402BF* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaveManager_SetCantidadEnemigos_m30CA6F1E28F5950E30D07721F6C24C165248F57C (WaveManager_t432EF298E8C09678E15239E5EF95239F5B4AC141* __this, int32_t ___0_total, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCronometroU3Ed__19__ctor_mA976D05166B35C53521D476C6ECA3D85755B104A (U3CCronometroU3Ed__19_t8630786029934060A71A9C2DA42F1616A5111AE0* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_FinCiudadPerdiste_m568BE756112EA0CB4CB05F17AB20803D176D5BEA (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline (float ___0_f, const RuntimeMethod* method) ;
@@ -4758,6 +4755,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Bruja_BuscarUI_mE12C71BA447576
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Bruja_ReposicionarEnSpawn_m57418DE07C0C43B43A4C604921BF07A8914881B8 (Bruja_tCF73023D00FCA565D43A82D1D3790297B48C100D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Bruja_BuscarCamara_m1244636CE8829349904F9406DBDCA5D3D632FB96 (Bruja_tCF73023D00FCA565D43A82D1D3790297B48C100D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CBuscarUIU3Ed__11__ctor_m747875E6E0AEAEB7B44BD54878CA813F8C4227FE (U3CBuscarUIU3Ed__11_t21EBD3F175DE99B057F5FBD722D2B5C8A5A5194B* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+inline AnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB* GameObject_GetComponent_TisAnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB_mD657E0BAB4C42B4D61E3F872AD2B366D604087B0 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  AnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReposicionarEnSpawnU3Ed__14__ctor_mC67A3537543FF8AB7E0CCEE3ABFB795815ED4F53 (U3CReposicionarEnSpawnU3Ed__14_t3FE51A0D6DB8C595D80BE872749A771CBD5C6D14* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CBuscarCamaraU3Ed__15__ctor_mE70BD2467F5DB83C99EA90D15A90D6B8F7AB541F (U3CBuscarCamaraU3Ed__15_tC401C6369FE5262846DEAB2DB12A5030E5347623* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 inline CinemachineCameraU5BU5D_tF545FDD0D158EF50FFC4B02C8AAFAEC241331C37* Object_FindObjectsByType_TisCinemachineCamera_t339FE5609618E89C5CCE9172494056A00C13E856_mBBC5ED741D2F919BAF547AE38559D65CAA1A865C (int32_t ___0_sortMode, const RuntimeMethod* method)
@@ -6179,7 +6180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_Awake_m83E43E90B571C6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:30>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:31>
 		GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* L_0;
 		L_0 = GameManagerGeneral_get_Instancia_m6D1E260C585082A049210E53039C57741888FED9_inline(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -6191,9 +6192,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_Awake_m83E43E90B571C6
 		}
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:32>
-		GameManagerGeneral_set_Instancia_m981D7D4843D28A9F01FC396AD7AEB1E98E79CC36_inline(__this, NULL);
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:33>
+		GameManagerGeneral_set_Instancia_m981D7D4843D28A9F01FC396AD7AEB1E98E79CC36_inline(__this, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:34>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -6203,12 +6204,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_Awake_m83E43E90B571C6
 
 IL_001f:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:37>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:38>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
 		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_3, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:39>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:40>
 		return;
 	}
 }
@@ -6216,14 +6217,14 @@ IL_001f:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_Start_m61CA523531FA38B3D7DF930CA3E77E1794E1A179 (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:44>
-		GameManagerGeneral_AplicarBeneficiosDeNivel_m3892D3D5333B75D7E1FAB4F69927611B54A037EF(__this, NULL);
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:45>
+		GameManagerGeneral_AplicarBeneficiosDeNivel_m3892D3D5333B75D7E1FAB4F69927611B54A037EF(__this, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:46>
 		RuntimeObject* L_0;
 		L_0 = GameManagerGeneral_IntroBruja_mE960D9B9E2478A99F0AD529E89531F9F51C071E3(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
 		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:46>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:47>
 		return;
 	}
 }
@@ -6233,12 +6234,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManagerGeneral_IntroBruja_
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB* L_0 = (U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB*)il2cpp_codegen_object_new(U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB_il2cpp_TypeInfo_var);
-		U3CIntroBrujaU3Ed__15__ctor_mB714A92071E3B0A1DDFE46D4D0A3B25BA38FBA2B(L_0, 0, NULL);
+		U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1* L_0 = (U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1*)il2cpp_codegen_object_new(U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1_il2cpp_TypeInfo_var);
+		U3CIntroBrujaU3Ed__16__ctor_mE6411674770C0B9210507AFC324B8985FD8571F6(L_0, 0, NULL);
 		return L_0;
 	}
 }
@@ -6256,11 +6257,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_AplicarBeneficiosDeNi
 	InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:78>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:79>
 		InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* L_0;
 		L_0 = InventarioJugador_get_Instancia_mB69A539C620520ADE568491FEDE3692032D96108_inline(NULL);
 		V_0 = L_0;
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:79>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:80>
 		InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* L_1 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -6271,13 +6272,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_AplicarBeneficiosDeNi
 		}
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:79>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:80>
 		return;
 	}
 
 IL_0010:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:81>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:82>
 		int32_t L_3 = __this->___nivelCiudad;
 		V_1 = L_3;
 		int32_t L_4 = V_1;
@@ -6303,27 +6304,27 @@ IL_0010:
 
 IL_002b:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:83>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:84>
 		InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* L_5 = V_0;
 		NullCheck(L_5);
 		L_5->___magia = ((int32_t)20);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:83>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:84>
 		goto IL_0047;
 	}
 
 IL_0035:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:84>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:85>
 		InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* L_6 = V_0;
 		NullCheck(L_6);
 		L_6->___magia = ((int32_t)40);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:84>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:85>
 		goto IL_0047;
 	}
 
 IL_003f:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:85>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:86>
 		InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* L_7 = V_0;
 		NullCheck(L_7);
 		L_7->___magia = ((int32_t)60);
@@ -6331,7 +6332,7 @@ IL_003f:
 
 IL_0047:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:88>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:89>
 		int32_t L_8 = __this->___nivelCiudad;
 		int32_t L_9 = L_8;
 		RuntimeObject* L_10 = Box(il2cpp_defaults.int32_class, &L_9);
@@ -6344,7 +6345,7 @@ IL_0047:
 		L_15 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteralF435C45C1DA3E34E56AFA2BADCAFC62AC63335F6, L_10, L_14, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_15, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:89>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:90>
 		return;
 	}
 }
@@ -6352,7 +6353,7 @@ IL_0047:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameManagerGeneral_PuedeViajarACiudad_m8647D61E6ADD5AE132B1B85703A9F60E039174B8 (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:91>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:92>
 		int32_t L_0 = __this->___nivelCiudad;
 		return (bool)((((int32_t)L_0) > ((int32_t)0))? 1 : 0);
 	}
@@ -6361,14 +6362,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameManagerGeneral_PuedeViajarACiudad_m8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_SubirNivel_m170244C1DF5742E22BE3C4EC60337B81327448A2 (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:95>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:96>
 		int32_t L_0 = __this->___nivelCiudad;
 		int32_t L_1;
 		L_1 = Mathf_Min_m888083F74FF5655778F0403BB5E9608BEFDEA8CB_inline(((int32_t)il2cpp_codegen_add(L_0, 1)), 2, NULL);
 		__this->___nivelCiudad = L_1;
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:96>
-		GameManagerGeneral_AplicarBeneficiosDeNivel_m3892D3D5333B75D7E1FAB4F69927611B54A037EF(__this, NULL);
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:97>
+		GameManagerGeneral_AplicarBeneficiosDeNivel_m3892D3D5333B75D7E1FAB4F69927611B54A037EF(__this, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:98>
 		return;
 	}
 }
@@ -6376,7 +6377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_SubirNivel_m170244C1D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_InicioJuego_m463547328CF92348D9F1DE72D530B11D8B948D42 (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:101>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:102>
 		int32_t L_0 = __this->___nivelCiudad;
 		if (L_0)
 		{
@@ -6384,7 +6385,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_InicioJuego_m46354732
 		}
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:102>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:103>
 		RuntimeObject* L_1;
 		L_1 = GameManagerGeneral_IntroBruja_mE960D9B9E2478A99F0AD529E89531F9F51C071E3(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
@@ -6394,7 +6395,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_InicioJuego_m46354732
 
 IL_0017:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:104>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:105>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___pauseMenu;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
@@ -6402,11 +6403,11 @@ IL_0017:
 
 IL_0023:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:105>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:106>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___uiJuego;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:106>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:107>
 		return;
 	}
 }
@@ -6414,11 +6415,11 @@ IL_0023:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_InicioJuegoCinematica_m2D98BEF0A60301655B98F24FA5E7E503922DFD00 (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:112>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:113>
 		PlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475* L_0 = __this->___director;
 		NullCheck(L_0);
 		PlayableDirector_Play_m937BA3BFAA11918A42D9D7874C0668DDD4B40988(L_0, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:113>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:114>
 		return;
 	}
 }
@@ -6426,17 +6427,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_InicioJuegoCinematica
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_PauseGame_m1FCB67BAB67F2EE739694378069892FCF7A1134D (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:119>
-		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((0.0f), NULL);
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:120>
+		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((0.0f), NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:121>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___pauseMenu;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:121>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:122>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___uiJuego;
 		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:122>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:123>
 		return;
 	}
 }
@@ -6444,17 +6445,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_PauseGame_m1FCB67BAB6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_ResumeGame_m5262806292AB5CE2A287C8F215DA029D51DE0217 (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:126>
-		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:127>
+		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:128>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___pauseMenu;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:128>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:129>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___uiJuego;
 		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:129>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:130>
 		return;
 	}
 }
@@ -6469,12 +6470,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_MainMenu_m2892C00354F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:133>
-		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:134>
+		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((1.0f), NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:135>
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral0C10E47675493434D04CD8025C8303AF94F7BA5A, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:135>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:136>
 		return;
 	}
 }
@@ -6488,10 +6489,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_QuitGame_mFF837C87CFD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:139>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:140>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		Application_Quit_mE304382DB9A6455C2A474C8F364C7387F37E9281(NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:140>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:141>
 		return;
 	}
 }
@@ -6509,7 +6510,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_ViajarACiudad_m99EC73
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:146>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:147>
 		bool L_0;
 		L_0 = GameManagerGeneral_PuedeViajarACiudad_m8647D61E6ADD5AE132B1B85703A9F60E039174B8(__this, NULL);
 		if (L_0)
@@ -6518,20 +6519,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_ViajarACiudad_m99EC73
 		}
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:148>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:149>
 		texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677* L_1 = ((texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_StaticFields*)il2cpp_codegen_static_fields_for(texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_il2cpp_TypeInfo_var))->___Instancia;
 		NullCheck(L_1);
 		texto_MostrarMensaje_mB5B4468906193DF57904C8483D1B6A18133A941B(L_1, _stringLiteralC7E7097E6BE324B545914E744F9E7C08516D95C1, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:149>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:150>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralC7E7097E6BE324B545914E744F9E7C08516D95C1, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:150>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:151>
 		return;
 	}
 
 IL_0022:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:154>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:155>
 		InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* L_2;
 		L_2 = InventarioJugador_get_Instancia_mB69A539C620520ADE568491FEDE3692032D96108_inline(NULL);
 		NullCheck(L_2);
@@ -6543,23 +6544,23 @@ IL_0022:
 		}
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:156>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:157>
 		texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677* L_4 = ((texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_StaticFields*)il2cpp_codegen_static_fields_for(texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_il2cpp_TypeInfo_var))->___Instancia;
 		NullCheck(L_4);
 		texto_MostrarMensaje_mB5B4468906193DF57904C8483D1B6A18133A941B(L_4, _stringLiteralAA6E485D7DF91FB1470610B6D050F013334846E4, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:157>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:158>
 		return;
 	}
 
 IL_003e:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:160>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:161>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___panelCargaViaje;
 		RuntimeObject* L_6;
 		L_6 = GameManagerGeneral_CargarConPanel_m888041E129E1E86B593D071EEFEC70A54ABCA349(__this, L_5, _stringLiteral9737DE1935CA088A7E8CED59ACE5C218291C9616, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_7;
 		L_7 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_6, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:161>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:162>
 		return;
 	}
 }
@@ -6573,13 +6574,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_FinCiudadGanaste_mA57
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:165>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:166>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___panelCargaVictoria;
 		RuntimeObject* L_1;
 		L_1 = GameManagerGeneral_CargarConPanel_m888041E129E1E86B593D071EEFEC70A54ABCA349(__this, L_0, _stringLiteralDB4D83D6871102EE8099E4F8AF38EB3DFE88EB6B, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
 		L_2 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_1, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:166>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:167>
 		return;
 	}
 }
@@ -6593,13 +6594,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral_FinCiudadPerdiste_m56
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:170>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:171>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___panelCargaDerrota;
 		RuntimeObject* L_1;
 		L_1 = GameManagerGeneral_CargarConPanel_m888041E129E1E86B593D071EEFEC70A54ABCA349(__this, L_0, _stringLiteralDB4D83D6871102EE8099E4F8AF38EB3DFE88EB6B, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
 		L_2 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_1, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:171>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:172>
 		return;
 	}
 }
@@ -6609,22 +6610,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManagerGeneral_CargarConPa
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* L_0 = (U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310*)il2cpp_codegen_object_new(U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310_il2cpp_TypeInfo_var);
-		U3CCargarConPanelU3Ed__28__ctor_m5000A824029C3495C7764927FB91433A7916F8CB(L_0, 0, NULL);
-		U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* L_1 = L_0;
+		U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* L_0 = (U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13*)il2cpp_codegen_object_new(U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13_il2cpp_TypeInfo_var);
+		U3CCargarConPanelU3Ed__29__ctor_m7B0B96FC5E46223C72753C5D20899553F13313B6(L_0, 0, NULL);
+		U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* L_2 = L_1;
+		U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* L_2 = L_1;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = ___0_panel;
 		NullCheck(L_2);
 		L_2->___panel = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___panel), (void*)L_3);
-		U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* L_4 = L_2;
+		U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* L_4 = L_2;
 		String_t* L_5 = ___1_escenaDestino;
 		NullCheck(L_4);
 		L_4->___escenaDestino = L_5;
@@ -6636,7 +6637,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameManagerGeneral_CargarConPa
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral__ctor_mC76503CD2FAC6F495ED97073CA3E63A90D150FDD (GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:20>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:21>
 		__this->___tiempoCarga = (2.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -6651,7 +6652,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerGeneral__ctor_mC76503CD2FAC6F
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 73663
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCargarConPanelU3Ed__28__ctor_m5000A824029C3495C7764927FB91433A7916F8CB (U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCargarConPanelU3Ed__29__ctor_m7B0B96FC5E46223C72753C5D20899553F13313B6 (U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -6661,14 +6662,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCargarConPanelU3Ed__28__ctor_m5000A82
 	}
 }
 // Method Definition Index: 73664
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCargarConPanelU3Ed__28_System_IDisposable_Dispose_m82AA93621669F29A8092526710DB5984BB12B44C (U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCargarConPanelU3Ed__29_System_IDisposable_Dispose_m39CBA53328C075839DA25D92151EDBDE04C14325 (U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
 // Method Definition Index: 73665
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CCargarConPanelU3Ed__28_MoveNext_mD9B3C62F60B6FE27454A437015461936D06FDAF5 (U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CCargarConPanelU3Ed__29_MoveNext_mD12A208A1C08C7639E18C7C617A0A400E1EF08A1 (U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6693,11 +6694,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CCargarConPanelU3Ed__28_MoveNext_mD9B3
 			}
 			case 1:
 			{
-				goto IL_0081;
+				goto IL_0099;
 			}
 			case 2:
 			{
-				goto IL_00c8;
+				goto IL_00e0;
 			}
 		}
 	}
@@ -6709,93 +6710,111 @@ IL_0022:
 	{
 		__this->___U3CU3E1__state = (-1);
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:176>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___panel;
+		GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* L_3 = V_1;
 		NullCheck(L_3);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:178>
-		String_t* L_4 = __this->___escenaDestino;
-		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_5;
-		L_5 = SceneManager_LoadSceneAsync_m84D316B1993A4E69F9E8CDE30531687B701F9300(L_4, NULL);
-		__this->___U3CcargaU3E5__2 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcargaU3E5__2), (void*)L_5);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:179>
-		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_6 = __this->___U3CcargaU3E5__2;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = L_3->___panelRecursos;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:177>
+		GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* L_5 = V_1;
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = L_5->___uiJuego;
 		NullCheck(L_6);
-		AsyncOperation_set_allowSceneActivation_mBD94FAB342455508CD7962D3CED490C64AF74522(L_6, (bool)0, NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:178>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___panel;
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:180>
+		String_t* L_8 = __this->___escenaDestino;
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_9;
+		L_9 = SceneManager_LoadSceneAsync_m84D316B1993A4E69F9E8CDE30531687B701F9300(L_8, NULL);
+		__this->___U3CcargaU3E5__2 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcargaU3E5__2), (void*)L_9);
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:181>
+		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_10 = __this->___U3CcargaU3E5__2;
+		NullCheck(L_10);
+		AsyncOperation_set_allowSceneActivation_mBD94FAB342455508CD7962D3CED490C64AF74522(L_10, (bool)0, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:183>
 		__this->___U3CtiempoTranscurridoU3E5__3 = (0.0f);
-		goto IL_0088;
+		goto IL_00a0;
 	}
 
-IL_005f:
+IL_0077:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:184>
-		float L_7 = __this->___U3CtiempoTranscurridoU3E5__3;
-		float L_8;
-		L_8 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		__this->___U3CtiempoTranscurridoU3E5__3 = ((float)il2cpp_codegen_add(L_7, L_8));
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:185>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:186>
+		float L_11 = __this->___U3CtiempoTranscurridoU3E5__3;
+		float L_12;
+		L_12 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___U3CtiempoTranscurridoU3E5__3 = ((float)il2cpp_codegen_add(L_11, L_12));
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:187>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 1;
 		return (bool)1;
 	}
 
-IL_0081:
+IL_0099:
 	{
 		__this->___U3CU3E1__state = (-1);
 	}
 
-IL_0088:
+IL_00a0:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:182>
-		float L_9 = __this->___U3CtiempoTranscurridoU3E5__3;
-		GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* L_10 = V_1;
-		NullCheck(L_10);
-		float L_11 = L_10->___tiempoCarga;
-		if ((((float)L_9) < ((float)L_11)))
-		{
-			goto IL_005f;
-		}
-	}
-	{
-		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_12 = __this->___U3CcargaU3E5__2;
-		NullCheck(L_12);
-		float L_13;
-		L_13 = AsyncOperation_get_progress_mF3B2837C1A5DDF3C2F7A3BA1E449DD4C71C632EE(L_12, NULL);
-		if ((((float)L_13) < ((float)(0.899999976f))))
-		{
-			goto IL_005f;
-		}
-	}
-	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:188>
-		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_14 = __this->___U3CcargaU3E5__2;
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:184>
+		float L_13 = __this->___U3CtiempoTranscurridoU3E5__3;
+		GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* L_14 = V_1;
 		NullCheck(L_14);
-		AsyncOperation_set_allowSceneActivation_mBD94FAB342455508CD7962D3CED490C64AF74522(L_14, (bool)1, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:189>
-		WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663* L_15 = (WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663*)il2cpp_codegen_object_new(WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663_il2cpp_TypeInfo_var);
-		WaitForEndOfFrame__ctor_m4AF7E576C01E6B04443BB898B1AE5D645F7D45AB(L_15, NULL);
-		__this->___U3CU3E2__current = L_15;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_15);
+		float L_15 = L_14->___tiempoCarga;
+		if ((((float)L_13) < ((float)L_15)))
+		{
+			goto IL_0077;
+		}
+	}
+	{
+		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_16 = __this->___U3CcargaU3E5__2;
+		NullCheck(L_16);
+		float L_17;
+		L_17 = AsyncOperation_get_progress_mF3B2837C1A5DDF3C2F7A3BA1E449DD4C71C632EE(L_16, NULL);
+		if ((((float)L_17) < ((float)(0.899999976f))))
+		{
+			goto IL_0077;
+		}
+	}
+	{
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:190>
+		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_18 = __this->___U3CcargaU3E5__2;
+		NullCheck(L_18);
+		AsyncOperation_set_allowSceneActivation_mBD94FAB342455508CD7962D3CED490C64AF74522(L_18, (bool)1, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:191>
+		WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663* L_19 = (WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663*)il2cpp_codegen_object_new(WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663_il2cpp_TypeInfo_var);
+		WaitForEndOfFrame__ctor_m4AF7E576C01E6B04443BB898B1AE5D645F7D45AB(L_19, NULL);
+		__this->___U3CU3E2__current = L_19;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_19);
 		__this->___U3CU3E1__state = 2;
 		return (bool)1;
 	}
 
-IL_00c8:
+IL_00e0:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:190>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___panel;
-		NullCheck(L_16);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)0, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:191>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:192>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___panel;
+		NullCheck(L_20);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)0, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:193>
+		GameManagerGeneral_t8A5CF9AA92E81FAA412478F41A404C861BE4B3DE* L_21 = V_1;
+		NullCheck(L_21);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = L_21->___uiJuego;
+		NullCheck(L_22);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_22, (bool)1, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:194>
 		return (bool)0;
 	}
 }
 // Method Definition Index: 73666
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCargarConPanelU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5835C67FA7CE2A765C335D7799AAAB8E9260A49F (U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCargarConPanelU3Ed__29_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2C1D9DB187A52F94C84E547BE8C5AE2181325F65 (U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -6803,16 +6822,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCargarConPanelU3Ed__28_Syst
 	}
 }
 // Method Definition Index: 73667
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCargarConPanelU3Ed__28_System_Collections_IEnumerator_Reset_m21AB10DC6AF5C030E1DE384D848CCA34F4D923B6 (U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCargarConPanelU3Ed__29_System_Collections_IEnumerator_Reset_m91F2448D1CC94A4DDE7E6D03E2A9C504421E853A (U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CCargarConPanelU3Ed__28_System_Collections_IEnumerator_Reset_m21AB10DC6AF5C030E1DE384D848CCA34F4D923B6_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CCargarConPanelU3Ed__29_System_Collections_IEnumerator_Reset_m91F2448D1CC94A4DDE7E6D03E2A9C504421E853A_RuntimeMethod_var)));
 	}
 }
 // Method Definition Index: 73668
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCargarConPanelU3Ed__28_System_Collections_IEnumerator_get_Current_mFD0148DD58AD019C7596DE85ED9031FFF7FDB474 (U3CCargarConPanelU3Ed__28_t4A2DE782BD50B82CA6B02DAAC0B7E92201CDB310* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCargarConPanelU3Ed__29_System_Collections_IEnumerator_get_Current_m5C7DE7706646E55AF0475645B114E1016E57BE31 (U3CCargarConPanelU3Ed__29_t019A24CAFE369B7FAE0919E26D36F50C0051DD13* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -6828,7 +6847,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCargarConPanelU3Ed__28_Syst
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 73669
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroBrujaU3Ed__15__ctor_mB714A92071E3B0A1DDFE46D4D0A3B25BA38FBA2B (U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroBrujaU3Ed__16__ctor_mE6411674770C0B9210507AFC324B8985FD8571F6 (U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -6838,14 +6857,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroBrujaU3Ed__15__ctor_mB714A92071E
 	}
 }
 // Method Definition Index: 73670
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroBrujaU3Ed__15_System_IDisposable_Dispose_m8B13FB1F75A2C6E537FE1D617BD91C0F69382367 (U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroBrujaU3Ed__16_System_IDisposable_Dispose_m22BE8BE684CCB80B980CA8F77DB3F038C84CBA76 (U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
 // Method Definition Index: 73671
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CIntroBrujaU3Ed__15_MoveNext_m5178B75A3FD13F6A15427604A537F19CE3B7A06F (U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CIntroBrujaU3Ed__16_MoveNext_m1CEAEFC02A117792D9D5BF5E9FAC4FE332F67A2B (U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6898,7 +6917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CIntroBrujaU3Ed__15_MoveNext_m5178B75A
 IL_0027:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:50>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:51>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_2 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_2, (2.0f), NULL);
 		__this->___U3CU3E2__current = L_2;
@@ -6910,13 +6929,13 @@ IL_0027:
 IL_0047:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:52>
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:53>
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:54>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:55>
 		texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677* L_3 = ((texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_StaticFields*)il2cpp_codegen_static_fields_for(texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_il2cpp_TypeInfo_var))->___Instancia;
 		NullCheck(L_3);
 		texto_MostrarMensaje_mB5B4468906193DF57904C8483D1B6A18133A941B(L_3, _stringLiteral8A30C35EDA669C4A997CC56F19E3597C41AEC423, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:56>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:57>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_4 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_4, (4.0f), NULL);
 		__this->___U3CU3E2__current = L_4;
@@ -6928,13 +6947,13 @@ IL_0047:
 IL_0076:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:58>
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:59>
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:60>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:61>
 		texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677* L_5 = ((texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_StaticFields*)il2cpp_codegen_static_fields_for(texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_il2cpp_TypeInfo_var))->___Instancia;
 		NullCheck(L_5);
 		texto_MostrarMensaje_mB5B4468906193DF57904C8483D1B6A18133A941B(L_5, _stringLiteral157183A6FCC4B16642161EB69E5F267D4F20D19B, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:62>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:63>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_6 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_6, (2.0f), NULL);
 		__this->___U3CU3E2__current = L_6;
@@ -6946,13 +6965,13 @@ IL_0076:
 IL_00a5:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:64>
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:65>
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:66>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:67>
 		texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677* L_7 = ((texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_StaticFields*)il2cpp_codegen_static_fields_for(texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_il2cpp_TypeInfo_var))->___Instancia;
 		NullCheck(L_7);
 		texto_MostrarMensaje_mB5B4468906193DF57904C8483D1B6A18133A941B(L_7, _stringLiteral7DF0635AA6C4AB8F9AAA1222AEA84F05AF8DFAF2, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:68>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:69>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_8 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_8, (5.0f), NULL);
 		__this->___U3CU3E2__current = L_8;
@@ -6964,13 +6983,13 @@ IL_00a5:
 IL_00d4:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:70>
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:71>
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:72>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:73>
 		texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677* L_9 = ((texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_StaticFields*)il2cpp_codegen_static_fields_for(texto_t5844984F809A7ABB7C0A9126FDFF50BD41100677_il2cpp_TypeInfo_var))->___Instancia;
 		NullCheck(L_9);
 		texto_MostrarMensaje_mB5B4468906193DF57904C8483D1B6A18133A941B(L_9, _stringLiteral0F6766AC4D218A6EF8FB7446656C1CEDCBFBFBE9, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:73>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:74>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_10 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_10, (3.0f), NULL);
 		__this->___U3CU3E2__current = L_10;
@@ -6982,12 +7001,12 @@ IL_00d4:
 IL_0103:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:74>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/GameManagerGeneral.cs:75>
 		return (bool)0;
 	}
 }
 // Method Definition Index: 73672
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CIntroBrujaU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8C2D6FF53103EE05D3DD47365FDFACEFEB96CA86 (U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CIntroBrujaU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFF7C57EC04F8212C73EC8BDD3C7E543E89CF683B (U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -6995,16 +7014,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CIntroBrujaU3Ed__15_System_C
 	}
 }
 // Method Definition Index: 73673
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroBrujaU3Ed__15_System_Collections_IEnumerator_Reset_m45D26A2716C8F20233C3E8F9709C6B3095FB98FC (U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroBrujaU3Ed__16_System_Collections_IEnumerator_Reset_mC79BE5563CDF917F7D3388D663F1564DCF36E961 (U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CIntroBrujaU3Ed__15_System_Collections_IEnumerator_Reset_m45D26A2716C8F20233C3E8F9709C6B3095FB98FC_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CIntroBrujaU3Ed__16_System_Collections_IEnumerator_Reset_mC79BE5563CDF917F7D3388D663F1564DCF36E961_RuntimeMethod_var)));
 	}
 }
 // Method Definition Index: 73674
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CIntroBrujaU3Ed__15_System_Collections_IEnumerator_get_Current_mC520DFFA7599AA01B8837F57673D918B5751C3E9 (U3CIntroBrujaU3Ed__15_tD794FD093A4D3CFB94E7ECB661306FAC8BA1A6BB* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CIntroBrujaU3Ed__16_System_Collections_IEnumerator_get_Current_mD30EF6D9143F4AF7F0A1F1A4B2ACCD1EBEA9A013 (U3CIntroBrujaU3Ed__16_t367EBC7970813D6548433B0B433B0B0453F38CB1* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -12227,92 +12246,97 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NuevoAnimales_Sobrevivir_m260CFEFB23D980
 	}
 }
 // Method Definition Index: 73786
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NuevoAnimales_InvocarAnimal_m377B2AC91C593DC1C8EE07F11CF78A4E9F9BF4AC (DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* ___0_datos, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_posicion, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotacion, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NuevoAnimales_InvocarAnimal_m816EB347C7332309627A60EB54E979E442D2BCDA (NuevoAnimales_t198EC292E6B1F952B2780D1184D0D2D5DC8BBD98* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_posicion, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_rotacion, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisAnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB_mD657E0BAB4C42B4D61E3F872AD2B366D604087B0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2D7F86C77ECF9B82AAC077B511F1004280571B90_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral21A1FEA8259B32D3D2B1F16632140B76AE5BE70A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5FAA98CAAC54431D4FA970B98D1D2732D8B363F5);
 		s_Il2CppMethodInitialized = true;
 	}
-	AnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB* V_0 = NULL;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_0 = NULL;
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:114>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:110>
 		InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* L_0;
 		L_0 = InventarioJugador_get_Instancia_mB69A539C620520ADE568491FEDE3692032D96108_inline(NULL);
-		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_1 = ___0_datos;
+		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_1 = __this->___datos;
 		NullCheck(L_0);
 		bool L_2;
 		L_2 = InventarioJugador_TieneAnimal_m8DDEF811050EDE7BCF2C59ECD2B1B24538C5E9B3(L_0, L_1, NULL);
 		if (L_2)
 		{
-			goto IL_0023;
+			goto IL_0032;
 		}
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:116>
-		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_3 = ___0_datos;
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:112>
+		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_3 = __this->___datos;
 		NullCheck(L_3);
 		String_t* L_4 = L_3->___nombre;
 		String_t* L_5;
-		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral5FAA98CAAC54431D4FA970B98D1D2732D8B363F5, L_4, NULL);
+		L_5 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral5FAA98CAAC54431D4FA970B98D1D2732D8B363F5, L_4, _stringLiteral21A1FEA8259B32D3D2B1F16632140B76AE5BE70A, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_5, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:117>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:113>
 		return;
 	}
 
-IL_0023:
+IL_0032:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:120>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:116>
 		InventarioJugador_tF7A70C2970451AD6744F45CF4C2B008F4AAF9DBF* L_6;
 		L_6 = InventarioJugador_get_Instancia_mB69A539C620520ADE568491FEDE3692032D96108_inline(NULL);
-		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_7 = ___0_datos;
+		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_7 = __this->___datos;
 		NullCheck(L_6);
 		InventarioJugador_UsarAnimal_mF89D0C16C78557C577D37628295A2E336C31A4C4(L_6, L_7, NULL);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:122>
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:123>
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:124>
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:125>
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:126>
-		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_8 = ___0_datos;
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:118>
+		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_8 = __this->___datos;
 		NullCheck(L_8);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = L_8->___prefab3D;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_posicion;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = ___2_rotacion;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___0_posicion;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = ___1_rotacion;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
 		L_12 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_9, L_10, L_11, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:128>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:121>
 		NullCheck(L_12);
-		AnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB* L_13;
-		L_13 = GameObject_GetComponent_TisAnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB_mD657E0BAB4C42B4D61E3F872AD2B366D604087B0(L_12, GameObject_GetComponent_TisAnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB_mD657E0BAB4C42B4D61E3F872AD2B366D604087B0_RuntimeMethod_var);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_13;
+		L_13 = GameObject_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2D7F86C77ECF9B82AAC077B511F1004280571B90(L_12, GameObject_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2D7F86C77ECF9B82AAC077B511F1004280571B90_RuntimeMethod_var);
 		V_0 = L_13;
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:130>
-		AnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB* L_14 = V_0;
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:122>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_14 = V_0;
 		bool L_15;
 		L_15 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_14, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_15)
 		{
-			goto IL_0051;
+			goto IL_0084;
 		}
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:131>
-		AnimalesGeneral_tDA1E74BA155AF976BB88DE7D8F2F6BCDA19888AB* L_16 = V_0;
-		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_17 = ___0_datos;
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:123>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_16 = V_0;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_17 = ___1_rotacion;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_17, L_18, NULL);
+		DatosAnimal_t38F7883E478305DBFD82619CF40091B6C20F716D* L_20 = __this->___datos;
+		NullCheck(L_20);
+		float L_21 = L_20->___velocidad;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_19, L_21, NULL);
 		NullCheck(L_16);
-		L_16->___datos = L_17;
-		Il2CppCodeGenWriteBarrier((void**)(&L_16->___datos), (void*)L_17);
+		Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985(L_16, L_22, NULL);
 	}
 
-IL_0051:
+IL_0084:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:132>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/animales/general/NuevoAnimales.cs:124>
 		return;
 	}
 }
@@ -12857,7 +12881,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManagerBatalla__ctor_m8C011F302D4869
 		__this->___puntosMinimosPorNivel = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___puntosMinimosPorNivel), (void*)L_4);
 		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/enemigos/Pooling de enemigos/GameManagerBatalla.cs:21>
-		__this->___tiempoPorNivel = (12.0f);
+		__this->___tiempoPorNivel = (50.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -15532,7 +15556,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void arena_boton_ViajarBatalla_mF2FAED8BAA51E
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_1)
 		{
-			goto IL_0018;
+			goto IL_0029;
 		}
 	}
 	{
@@ -15541,11 +15565,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void arena_boton_ViajarBatalla_mF2FAED8BAA51E
 		L_2 = GameManagerGeneral_get_Instancia_m6D1E260C585082A049210E53039C57741888FED9_inline(NULL);
 		NullCheck(L_2);
 		GameManagerGeneral_ViajarACiudad_m99EC7371BA30B446EF295F10780EE5103869EA06(L_2, 1, NULL);
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/objects/arena_boton.cs:75>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->___botonInteraccion;
+		NullCheck(L_3);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
 	}
 
-IL_0018:
+IL_0029:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/objects/arena_boton.cs:76>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/objects/arena_boton.cs:77>
 		return;
 	}
 }
@@ -15559,7 +15590,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void arena_boton_DesactivarBoton_m7EFA79285F9
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/objects/arena_boton.cs:80>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/objects/arena_boton.cs:81>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___botonInteraccion;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -15570,7 +15601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void arena_boton_DesactivarBoton_m7EFA79285F9
 		}
 	}
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/objects/arena_boton.cs:82>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/objects/arena_boton.cs:83>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->___botonInteraccion;
 		NullCheck(L_2);
 		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_2, (bool)0, NULL);
@@ -15578,7 +15609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void arena_boton_DesactivarBoton_m7EFA79285F9
 
 IL_001a:
 	{
-		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/objects/arena_boton.cs:84>
+		//<source_info:C:/Users/hfan7/OneDrive/Documentos/GitHub/juego3D/Assets/scripts/objects/arena_boton.cs:85>
 		return;
 	}
 }
